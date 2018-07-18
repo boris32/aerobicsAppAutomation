@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-FullTest">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,21 +103,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-FullTest" title="tests.AddMonthsDialogYearsListTest" hash-for-method="checkYearsList">checkYearsList</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FullTest" title="tests.LayoutTest" hash-for-method="testLayout">testLayout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FullTest" title="tests.AddMonthDialogLayoutTest" hash-for-method="verifyAddMonthDialogLayout">verifyAddMonthDialogLayout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FullTest" title="tests.AddMonthDialogMonthListTest" hash-for-method="verifyThatMonthsListIsCorrect">verifyThatMonthsListIsCorrect</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-FullTest -->
@@ -135,21 +120,6 @@
           <div class="suite-FullTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.AddMonthDialogMonthListTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyThatMonthsListIsCorrect">
-                  </a> <!-- verifyThatMonthsListIsCorrect -->
-                  <span class="method-name">verifyThatMonthsListIsCorrect</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FullTest-class-passed -->
-          <div class="suite-FullTest-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">tests.AddMonthsDialogYearsListTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -158,36 +128,6 @@
                   <a name="checkYearsList">
                   </a> <!-- checkYearsList -->
                   <span class="method-name">checkYearsList</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FullTest-class-passed -->
-          <div class="suite-FullTest-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.AddMonthDialogLayoutTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAddMonthDialogLayout">
-                  </a> <!-- verifyAddMonthDialogLayout -->
-                  <span class="method-name">verifyAddMonthDialogLayout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FullTest-class-passed -->
-          <div class="suite-FullTest-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.LayoutTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLayout">
-                  </a> <!-- testLayout -->
-                  <span class="method-name">testLayout</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,21 +142,6 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;FullTest&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test initial layout&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.LayoutTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test initial layout --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test Add Month Layout&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.AddMonthDialogLayoutTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test Add Month Layout --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test Months List&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.AddMonthDialogMonthListTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test Months List --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test Years List&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.AddMonthsDialogYearsListTest&quot;/&gt;
@@ -232,15 +157,6 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">Test initial layout (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test Add Month Layout (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test Months List (1 class)</span>
-              </li>
               <li>
                 <span class="test-name">Test Years List (1 class)</span>
               </li>
@@ -268,28 +184,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkYearsList')
 data.setCell(0, 2, 'tests.AddMonthsDialogYearsListTest')
-data.setCell(0, 3, 33972);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyThatMonthsListIsCorrect')
-data.setCell(1, 2, 'tests.AddMonthDialogMonthListTest')
-data.setCell(1, 3, 23845);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAddMonthDialogLayout')
-data.setCell(2, 2, 'tests.AddMonthDialogLayoutTest')
-data.setCell(2, 3, 1871);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testLayout')
-data.setCell(3, 2, 'tests.LayoutTest')
-data.setCell(3, 3, 653);
+data.setCell(0, 3, 2680);
 window.suiteTableData['FullTest']= { tableData: data, tableDiv: 'times-div-FullTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-FullTest">
               </div> <!-- times-div-FullTest -->
             </div> <!-- times-div -->
@@ -315,63 +219,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.LayoutTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.AddMonthsDialogYearsListTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">testLayout</span>
-                <span class="method-start">19054 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">wrapUp</span>
-                <span class="method-start">19709 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.AddMonthDialogLayoutTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setupTest</span>
-                <span class="method-start">24520 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">verifyAddMonthDialogLayout</span>
-                <span class="method-start">40296 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">wrapUp</span>
-                <span class="method-start">42168 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.AddMonthDialogMonthListTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setupTest</span>
-                <span class="method-start">46930 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">verifyThatMonthsListIsCorrect</span>
-                <span class="method-start">62876 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">wrapUp</span>
-                <span class="method-start">86721 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.AddMonthsDialogYearsListTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setupTest</span>
-                <span class="method-start">91662 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
                 <span class="method-name">checkYearsList</span>
-                <span class="method-start">107517 ms</span>
+                <span class="method-start">17166 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">wrapUp</span>
-                <span class="method-start">141489 ms</span>
+                <span class="method-start">19847 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

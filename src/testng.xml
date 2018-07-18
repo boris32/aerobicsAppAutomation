@@ -2,6 +2,8 @@
     <suite name="FullTest">
     <!--
     -->
+
+    <!--
         <test name="Test initial layout">
             <classes>
                 <class name="tests.LayoutTest" />
@@ -19,6 +21,7 @@
             </classes>
         </test>
 
+    -->
         <test name="Test Years List">
             <classes>
                 <class name="tests.AddMonthsDialogYearsListTest"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[Desired capabilities are now set.]]>
@@ -7,97 +7,13 @@
     <line>
       <![CDATA[Driver configured.]]>
     </line>
-    <line>
-      <![CDATA[Desired capabilities are now set.]]>
-    </line>
-    <line>
-      <![CDATA[Driver configured.]]>
-    </line>
-    <line>
-      <![CDATA[Desired capabilities are now set.]]>
-    </line>
-    <line>
-      <![CDATA[Driver configured.]]>
-    </line>
-    <line>
-      <![CDATA[Desired capabilities are now set.]]>
-    </line>
-    <line>
-      <![CDATA[Driver configured.]]>
-    </line>
   </reporter-output>
-  <suite name="FullTest" duration-ms="146371" started-at="2018-07-18T21:24:44Z" finished-at="2018-07-18T21:27:11Z">
+  <suite name="FullTest" duration-ms="25036" started-at="2018-07-18T21:54:20Z" finished-at="2018-07-18T21:54:45Z">
     <groups>
     </groups>
-    <test name="Test initial layout" duration-ms="24467" started-at="2018-07-18T21:24:44Z" finished-at="2018-07-18T21:25:09Z">
-      <class name="tests.LayoutTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.LayoutTest@23986957]" name="setupTest" is-config="true" duration-ms="19041" started-at="2018-07-18T21:24:44Z" finished-at="2018-07-18T21:25:03Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Desired capabilities are now set.]]>
-            </line>
-            <line>
-              <![CDATA[Driver configured.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="testLayout()[pri:0, instance:tests.LayoutTest@23986957]" name="testLayout" duration-ms="653" started-at="2018-07-18T21:25:03Z" finished-at="2018-07-18T21:25:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLayout -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.LayoutTest@23986957]" name="wrapUp" is-config="true" duration-ms="4756" started-at="2018-07-18T21:25:04Z" finished-at="2018-07-18T21:25:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrapUp -->
-      </class> <!-- tests.LayoutTest -->
-    </test> <!-- Test initial layout -->
-    <test name="Test Add Month Layout" duration-ms="22376" started-at="2018-07-18T21:25:09Z" finished-at="2018-07-18T21:25:31Z">
-      <class name="tests.AddMonthDialogLayoutTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthDialogLayoutTest@2f177a4b]" name="setupTest" is-config="true" duration-ms="15776" started-at="2018-07-18T21:25:09Z" finished-at="2018-07-18T21:25:25Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Desired capabilities are now set.]]>
-            </line>
-            <line>
-              <![CDATA[Driver configured.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="verifyAddMonthDialogLayout()[pri:0, instance:tests.AddMonthDialogLayoutTest@2f177a4b]" name="verifyAddMonthDialogLayout" duration-ms="1871" started-at="2018-07-18T21:25:25Z" finished-at="2018-07-18T21:25:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddMonthDialogLayout -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthDialogLayoutTest@2f177a4b]" name="wrapUp" is-config="true" duration-ms="4728" started-at="2018-07-18T21:25:27Z" finished-at="2018-07-18T21:25:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrapUp -->
-      </class> <!-- tests.AddMonthDialogLayoutTest -->
-    </test> <!-- Test Add Month Layout -->
-    <test name="Test Months List" duration-ms="44693" started-at="2018-07-18T21:25:31Z" finished-at="2018-07-18T21:26:16Z">
-      <class name="tests.AddMonthDialogMonthListTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthDialogMonthListTest@1fe20588]" name="setupTest" is-config="true" duration-ms="15946" started-at="2018-07-18T21:25:31Z" finished-at="2018-07-18T21:25:47Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Desired capabilities are now set.]]>
-            </line>
-            <line>
-              <![CDATA[Driver configured.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="verifyThatMonthsListIsCorrect()[pri:0, instance:tests.AddMonthDialogMonthListTest@1fe20588]" name="verifyThatMonthsListIsCorrect" duration-ms="23845" started-at="2018-07-18T21:25:47Z" finished-at="2018-07-18T21:26:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatMonthsListIsCorrect -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthDialogMonthListTest@1fe20588]" name="wrapUp" is-config="true" duration-ms="4902" started-at="2018-07-18T21:26:11Z" finished-at="2018-07-18T21:26:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrapUp -->
-      </class> <!-- tests.AddMonthDialogMonthListTest -->
-    </test> <!-- Test Months List -->
-    <test name="Test Years List" duration-ms="54708" started-at="2018-07-18T21:26:16Z" finished-at="2018-07-18T21:27:11Z">
+    <test name="Test Years List" duration-ms="25036" started-at="2018-07-18T21:54:20Z" finished-at="2018-07-18T21:54:45Z">
       <class name="tests.AddMonthsDialogYearsListTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthsDialogYearsListTest@7a4ccb53]" name="setupTest" is-config="true" duration-ms="15854" started-at="2018-07-18T21:26:16Z" finished-at="2018-07-18T21:26:32Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthsDialogYearsListTest@69d9c55]" name="setupTest" is-config="true" duration-ms="17155" started-at="2018-07-18T21:54:20Z" finished-at="2018-07-18T21:54:37Z">
           <reporter-output>
             <line>
               <![CDATA[Desired capabilities are now set.]]>
@@ -107,11 +23,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="checkYearsList()[pri:0, instance:tests.AddMonthsDialogYearsListTest@7a4ccb53]" name="checkYearsList" duration-ms="33972" started-at="2018-07-18T21:26:32Z" finished-at="2018-07-18T21:27:06Z">
+        <test-method status="PASS" signature="checkYearsList()[pri:0, instance:tests.AddMonthsDialogYearsListTest@69d9c55]" name="checkYearsList" duration-ms="2680" started-at="2018-07-18T21:54:37Z" finished-at="2018-07-18T21:54:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkYearsList -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthsDialogYearsListTest@7a4ccb53]" name="wrapUp" is-config="true" duration-ms="4881" started-at="2018-07-18T21:27:06Z" finished-at="2018-07-18T21:27:11Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthsDialogYearsListTest@69d9c55]" name="wrapUp" is-config="true" duration-ms="5188" started-at="2018-07-18T21:54:40Z" finished-at="2018-07-18T21:54:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->

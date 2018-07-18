@@ -25,7 +25,7 @@ public class AddMonthsDialogYearsListTest extends BaseTest{
 
         List<String> strYearsExpected = new ArrayList<String>();
         int year = Calendar.getInstance().get(Calendar.YEAR);
-        for (int i=0;i<5;i++)
+        for (int i=0;i<3;i++)
             strYearsExpected.add(Integer.toString(year + i));
 
         Assert.assertTrue((strYearsExpected.containsAll(strYearsActual)) && (strYearsExpected.size() == strYearsActual.size()));

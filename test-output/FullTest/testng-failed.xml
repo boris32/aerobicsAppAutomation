@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FullTest]">
+  <test thread-count="5" name="Test initial layout(failed)">
+    <classes>
+      <class name="tests.LayoutTest">
+        <methods>
+          <include name="wrapUp"/>
+          <include name="testLayout"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.LayoutTest -->
+    </classes>
+  </test> <!-- Test initial layout(failed) -->
+  <test thread-count="5" name="Test Add Month Layout(failed)">
+    <classes>
+      <class name="tests.AddMonthDialogLayoutTest">
+        <methods>
+          <include name="verifyAddMonthDialogLayout"/>
+          <include name="wrapUp"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.AddMonthDialogLayoutTest -->
+    </classes>
+  </test> <!-- Test Add Month Layout(failed) -->
+  <test thread-count="5" name="Test Months List(failed)">
+    <classes>
+      <class name="tests.AddMonthDialogMonthListTest">
+        <methods>
+          <include name="wrapUp"/>
+          <include name="verifyThatMonthsListIsCorrect"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.AddMonthDialogMonthListTest -->
+    </classes>
+  </test> <!-- Test Months List(failed) -->
+  <test thread-count="5" name="Test Years List(failed)">
+    <classes>
+      <class name="tests.AddMonthsDialogYearsListTest">
+        <methods>
+          <include name="checkYearsList"/>
+          <include name="wrapUp"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.AddMonthsDialogYearsListTest -->
+    </classes>
+  </test> <!-- Test Years List(failed) -->
+</suite> <!-- Failed suite [FullTest] -->

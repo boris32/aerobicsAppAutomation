@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+    <suite name="FullTest">
+    <!--
+    -->
+        <test name="Test initial layout">
+            <classes>
+                <class name="tests.LayoutTest" />
+            </classes>
+        </test>
+        <test name="Test Add Month Layout">
+            <classes>
+                <class name="tests.AddMonthDialogLayoutTest"/>
+            </classes>
+        </test>
+
+        <test name="Test Months List">
+            <classes>
+                <class name="tests.AddMonthDialogMonthListTest"/>
+            </classes>
+        </test>
+
+        <test name="Test Years List">
+            <classes>
+                <class name="tests.AddMonthsDialogYearsListTest"/>
+            </classes>
+        </test>
+
+
+                
+    </suite>

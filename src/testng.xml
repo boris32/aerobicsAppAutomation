@@ -3,7 +3,7 @@
     <!--
     -->
 
-    <!--
+
         <test name="Test initial layout">
             <classes>
                 <class name="tests.LayoutTest" />
@@ -17,17 +17,22 @@
 
         <test name="Test Months List">
             <classes>
-                <class name="tests.AddMonthDialogMonthListTest"/>
+                <class name="tests.SingleMonthAdditionTest"/>
             </classes>
         </test>
 
-    -->
+
         <test name="Test Years List">
             <classes>
                 <class name="tests.AddMonthsDialogYearsListTest"/>
             </classes>
         </test>
 
+    <test name="month addition">
+        <classes>
+            <class name="tests.MonthAdditionTest"/>
+        </classes>
+    </test>
 
                 
     </suite>

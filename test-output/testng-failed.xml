@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [FullTest]">
-  <test thread-count="5" name="Test Years List(failed)">
+  <test thread-count="5" name="month addition(failed)">
     <classes>
-      <class name="tests.AddMonthsDialogYearsListTest">
+      <class name="tests.MonthAdditionTest">
         <methods>
-          <include name="checkYearsList"/>
           <include name="wrapUp"/>
+          <include name="AddNewMonth"/>
           <include name="setupTest"/>
         </methods>
-      </class> <!-- tests.AddMonthsDialogYearsListTest -->
+      </class> <!-- tests.MonthAdditionTest -->
     </classes>
-  </test> <!-- Test Years List(failed) -->
+  </test> <!-- month addition(failed) -->
 </suite> <!-- Failed suite [FullTest] -->

@@ -22,12 +22,14 @@ public class AddMonthDialog extends BasePage {
     private MobileElement listOfYears;
 
     public AddMonthDialog (AppiumDriver<MobileElement> driver) {
-        this.driver = driver;
 
         monthSpinner = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/spinnerMonth");
         yearSpinner = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/spinnerYear");
         addMonthOk = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/buttonMonthDialogOk");
         addMonthCancel = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/buttonMonthDialogCancel");
+
+
+        this.driver = driver;
         //
         //
     }

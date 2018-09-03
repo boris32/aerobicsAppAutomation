@@ -2,8 +2,10 @@ package infrastructure;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
-import java.awt.*;
+import java.util.List;
 
 /**
  * Created by Boris on 6/29/2018.
@@ -14,11 +16,14 @@ public class MonthsCustomersManagementScreen extends BasePage {
         private MobileElement monthsList;
         private MobileElement customerList;
         private MobileElement customerDetails;
+        private AppiumDriver<MobileElement> driver;
+        private List<MobileElement> monthsListItems;
 
 
 
 
     public MonthsCustomersManagementScreen (AppiumDriver<MobileElement> driver) {
+            this.driver = driver;
             addNewMonth = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/addNewMonth");
             addNewCustomer = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/buttonAddNewCustomer");
             monthsList = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/MonthsList");
@@ -50,9 +55,21 @@ public class MonthsCustomersManagementScreen extends BasePage {
             addNewMonth.click();
         }
 
+        public WebElement getTheExistingMonthsList() {
+            return monthsList;
+        }
+
+        public List<MobileElement> getExistingMonthAsListOfItems () {
+            monthsListItems = driver.findElements(By.xpath("//android.widget.ListView[@resource-id='com.example.boris.myandroidapp:id/MonthsList']/android.widget.TextView"));
+
+            return monthsListItems;
+        }
+
         //CUSTOMER RELATED METHODS
         public void pressAddNewCustomerButton () {
             addNewCustomer.click();
         }
+
+
 
 }

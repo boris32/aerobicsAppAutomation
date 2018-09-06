@@ -5,6 +5,7 @@ import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -24,7 +25,8 @@ public class MonthsCustomersManagementScreen extends BasePage {
 
     public MonthsCustomersManagementScreen (AppiumDriver<MobileElement> driver) {
             this.driver = driver;
-            addNewMonth = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/addNewMonth");
+            //addNewMonth = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/addNewMonth");
+            addNewMonth = (MobileElement) driver.findElementByXPath("//android.widget.Button[@text='+ ADD NEW']");
             addNewCustomer = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/buttonAddNewCustomer");
             monthsList = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/MonthsList");
             customerList = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/CustomerList");
@@ -65,10 +67,40 @@ public class MonthsCustomersManagementScreen extends BasePage {
             return monthsListItems;
         }
 
+        public void automaticallyAddNewMonth(String desiredMonth, String desiredYear) {
+
+            pressAddNewMonthButton();
+            AddMonthDialog amd = new AddMonthDialog(driver);
+
+            amd.expandMonthSpinner();
+            List<MobileElement> months = amd.getMonthsListInSpinnerAsListOfMobileElements();
+            for (MobileElement el : months) {
+                if (el.getText().toLowerCase().equals(desiredMonth.toLowerCase())) {
+                    el.click();
+                    break;
+                }
+
+            }
+
+            amd.expandYearSpinner();
+            List<MobileElement> years = amd.getYearsListInSpinnerAsListOfMobileElements();
+            for (MobileElement el : years) {
+                if (el.getText().toLowerCase().equals(desiredYear.toLowerCase())) {
+                    el.click();
+                    break;
+                }
+            }
+
+            amd.clickOkButton();
+
+        }
+
+
         //CUSTOMER RELATED METHODS
         public void pressAddNewCustomerButton () {
             addNewCustomer.click();
         }
+
 
 
 

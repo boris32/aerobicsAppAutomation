@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
     <line>
       <![CDATA[<b>Now testing: Management screen layout<b>]]>
@@ -29,22 +29,43 @@
       <![CDATA[<b>Now testing: New Month Addition<b>]]>
     </line>
     <line>
-      <![CDATA[Target month/ year to look for: Aug, 2019]]>
+      <![CDATA[Target month/ year to look for: Sep, 2019]]>
     </line>
     <line>
-      <![CDATA[Month list item at index 0 returned: Aug 2019(1)]]>
+      <![CDATA[Month list item at index 0 returned: Sep 2019(1)]]>
+    </line>
+    <line>
+      <![CDATA[<b>Now testing: Multiple Month Addition<b>]]>
+    </line>
+    <line>
+      <![CDATA[First target month/ year to look for: Mar, 2020]]>
+    </line>
+    <line>
+      <![CDATA[Received month and year: Mar 2020(1)]]>
+    </line>
+    <line>
+      <![CDATA[Second target month/ year to look for: Dec, 2018]]>
+    </line>
+    <line>
+      <![CDATA[Received month and year: Dec 2018(2)]]>
+    </line>
+    <line>
+      <![CDATA[Third target month/ year to look for: Sep, 2019]]>
+    </line>
+    <line>
+      <![CDATA[Received month and year: Sep 2019(3)]]>
     </line>
   </reporter-output>
-  <suite name="FullTest" duration-ms="156945" started-at="2018-08-28T22:00:00Z" finished-at="2018-08-28T22:02:37Z">
+  <suite name="FullTest" duration-ms="166175" started-at="2018-09-06T20:36:40Z" finished-at="2018-09-06T20:39:26Z">
     <groups>
     </groups>
-    <test name="Test initial layout" duration-ms="41725" started-at="2018-08-28T22:00:00Z" finished-at="2018-08-28T22:00:42Z">
+    <test name="Test initial layout" duration-ms="23575" started-at="2018-09-06T20:36:40Z" finished-at="2018-09-06T20:37:04Z">
       <class name="tests.LayoutTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.LayoutTest@7ca48474]" name="setupTest" is-config="true" duration-ms="35335" started-at="2018-08-28T22:00:00Z" finished-at="2018-08-28T22:00:35Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.LayoutTest@7ca48474]" name="setupTest" is-config="true" duration-ms="17530" started-at="2018-09-06T20:36:40Z" finished-at="2018-09-06T20:36:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="testLayout()[pri:0, instance:tests.LayoutTest@7ca48474]" name="testLayout" duration-ms="893" started-at="2018-08-28T22:00:35Z" finished-at="2018-08-28T22:00:36Z">
+        <test-method status="PASS" signature="testLayout()[pri:0, instance:tests.LayoutTest@7ca48474]" name="testLayout" duration-ms="888" started-at="2018-09-06T20:36:58Z" finished-at="2018-09-06T20:36:59Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: Management screen layout<b>]]>
@@ -54,19 +75,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- testLayout -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.LayoutTest@7ca48474]" name="wrapUp" is-config="true" duration-ms="5485" started-at="2018-08-28T22:00:36Z" finished-at="2018-08-28T22:00:42Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.LayoutTest@7ca48474]" name="wrapUp" is-config="true" duration-ms="5144" started-at="2018-09-06T20:36:59Z" finished-at="2018-09-06T20:37:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
       </class> <!-- tests.LayoutTest -->
     </test> <!-- Test initial layout -->
-    <test name="Test Add Month Layout" duration-ms="25019" started-at="2018-08-28T22:00:42Z" finished-at="2018-08-28T22:01:07Z">
+    <test name="Test Add Month Layout" duration-ms="23182" started-at="2018-09-06T20:37:04Z" finished-at="2018-09-06T20:37:27Z">
       <class name="tests.AddMonthDialogLayoutTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthDialogLayoutTest@1810399e]" name="setupTest" is-config="true" duration-ms="17237" started-at="2018-08-28T22:00:42Z" finished-at="2018-08-28T22:00:59Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthDialogLayoutTest@1810399e]" name="setupTest" is-config="true" duration-ms="16451" started-at="2018-09-06T20:37:04Z" finished-at="2018-09-06T20:37:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="verifyAddMonthDialogLayout()[pri:0, instance:tests.AddMonthDialogLayoutTest@1810399e]" name="verifyAddMonthDialogLayout" duration-ms="2725" started-at="2018-08-28T22:00:59Z" finished-at="2018-08-28T22:01:02Z">
+        <test-method status="PASS" signature="verifyAddMonthDialogLayout()[pri:0, instance:tests.AddMonthDialogLayoutTest@1810399e]" name="verifyAddMonthDialogLayout" duration-ms="2014" started-at="2018-09-06T20:37:20Z" finished-at="2018-09-06T20:37:22Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: Add Month dialog layout<b>]]>
@@ -76,19 +97,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyAddMonthDialogLayout -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthDialogLayoutTest@1810399e]" name="wrapUp" is-config="true" duration-ms="5054" started-at="2018-08-28T22:01:02Z" finished-at="2018-08-28T22:01:07Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthDialogLayoutTest@1810399e]" name="wrapUp" is-config="true" duration-ms="4715" started-at="2018-09-06T20:37:22Z" finished-at="2018-09-06T20:37:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
       </class> <!-- tests.AddMonthDialogLayoutTest -->
     </test> <!-- Test Add Month Layout -->
-    <test name="Test Months List" duration-ms="25138" started-at="2018-08-28T22:01:07Z" finished-at="2018-08-28T22:01:32Z">
+    <test name="Test Months List" duration-ms="24889" started-at="2018-09-06T20:37:27Z" finished-at="2018-09-06T20:37:52Z">
       <class name="tests.AddMonthDialogMonthListTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthDialogMonthListTest@56f4468b]" name="setupTest" is-config="true" duration-ms="16510" started-at="2018-08-28T22:01:07Z" finished-at="2018-08-28T22:01:23Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthDialogMonthListTest@56f4468b]" name="setupTest" is-config="true" duration-ms="16701" started-at="2018-09-06T20:37:27Z" finished-at="2018-09-06T20:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="verifyThatMonthsListIsCorrect()[pri:0, instance:tests.AddMonthDialogMonthListTest@56f4468b]" name="verifyThatMonthsListIsCorrect" duration-ms="3580" started-at="2018-08-28T22:01:23Z" finished-at="2018-08-28T22:01:27Z">
+        <test-method status="PASS" signature="verifyThatMonthsListIsCorrect()[pri:0, instance:tests.AddMonthDialogMonthListTest@56f4468b]" name="verifyThatMonthsListIsCorrect" duration-ms="3175" started-at="2018-09-06T20:37:44Z" finished-at="2018-09-06T20:37:47Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: Months list content on the add month dialog<b>]]>
@@ -98,19 +119,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyThatMonthsListIsCorrect -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthDialogMonthListTest@56f4468b]" name="wrapUp" is-config="true" duration-ms="5047" started-at="2018-08-28T22:01:27Z" finished-at="2018-08-28T22:01:32Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthDialogMonthListTest@56f4468b]" name="wrapUp" is-config="true" duration-ms="5013" started-at="2018-09-06T20:37:47Z" finished-at="2018-09-06T20:37:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
       </class> <!-- tests.AddMonthDialogMonthListTest -->
     </test> <!-- Test Months List -->
-    <test name="Test Years List" duration-ms="26004" started-at="2018-08-28T22:01:32Z" finished-at="2018-08-28T22:01:58Z">
+    <test name="Test Years List" duration-ms="26983" started-at="2018-09-06T20:37:52Z" finished-at="2018-09-06T20:38:19Z">
       <class name="tests.AddMonthsDialogYearsListTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthsDialogYearsListTest@6d00a15d]" name="setupTest" is-config="true" duration-ms="16211" started-at="2018-08-28T22:01:32Z" finished-at="2018-08-28T22:01:48Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthsDialogYearsListTest@6d00a15d]" name="setupTest" is-config="true" duration-ms="16635" started-at="2018-09-06T20:37:52Z" finished-at="2018-09-06T20:38:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="checkYearsList()[pri:0, instance:tests.AddMonthsDialogYearsListTest@6d00a15d]" name="checkYearsList" duration-ms="4775" started-at="2018-08-28T22:01:48Z" finished-at="2018-08-28T22:01:53Z">
+        <test-method status="PASS" signature="checkYearsList()[pri:0, instance:tests.AddMonthsDialogYearsListTest@6d00a15d]" name="checkYearsList" duration-ms="5153" started-at="2018-09-06T20:38:09Z" finished-at="2018-09-06T20:38:14Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: Years list content on the add month dialog<b>]]>
@@ -120,36 +141,73 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkYearsList -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthsDialogYearsListTest@6d00a15d]" name="wrapUp" is-config="true" duration-ms="5017" started-at="2018-08-28T22:01:53Z" finished-at="2018-08-28T22:01:58Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthsDialogYearsListTest@6d00a15d]" name="wrapUp" is-config="true" duration-ms="5194" started-at="2018-09-06T20:38:14Z" finished-at="2018-09-06T20:38:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
       </class> <!-- tests.AddMonthsDialogYearsListTest -->
     </test> <!-- Test Years List -->
-    <test name="month addition" duration-ms="39002" started-at="2018-08-28T22:01:58Z" finished-at="2018-08-28T22:02:37Z">
-      <class name="tests.MonthAdditionTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.MonthAdditionTest@62ee68d8]" name="setupTest" is-config="true" duration-ms="16405" started-at="2018-08-28T22:01:58Z" finished-at="2018-08-28T22:02:14Z">
+    <test name="Test Single Month Addition" duration-ms="28169" started-at="2018-09-06T20:38:19Z" finished-at="2018-09-06T20:38:47Z">
+      <class name="tests.SingleMonthAdditionTest">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.SingleMonthAdditionTest@62ee68d8]" name="setupTest" is-config="true" duration-ms="16583" started-at="2018-09-06T20:38:19Z" finished-at="2018-09-06T20:38:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="AddNewMonth()[pri:0, instance:tests.MonthAdditionTest@62ee68d8]" name="AddNewMonth" duration-ms="17665" started-at="2018-08-28T22:02:14Z" finished-at="2018-08-28T22:02:32Z">
+        <test-method status="PASS" signature="AddNewMonth()[pri:0, instance:tests.SingleMonthAdditionTest@62ee68d8]" name="AddNewMonth" duration-ms="6594" started-at="2018-09-06T20:38:36Z" finished-at="2018-09-06T20:38:42Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: New Month Addition<b>]]>
             </line>
             <line>
-              <![CDATA[Target month/ year to look for: Aug, 2019]]>
+              <![CDATA[Target month/ year to look for: Sep, 2019]]>
             </line>
             <line>
-              <![CDATA[Month list item at index 0 returned: Aug 2019(1)]]>
+              <![CDATA[Month list item at index 0 returned: Sep 2019(1)]]>
             </line>
           </reporter-output>
         </test-method> <!-- AddNewMonth -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.MonthAdditionTest@62ee68d8]" name="wrapUp" is-config="true" duration-ms="4930" started-at="2018-08-28T22:02:32Z" finished-at="2018-08-28T22:02:37Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.SingleMonthAdditionTest@62ee68d8]" name="wrapUp" is-config="true" duration-ms="4992" started-at="2018-09-06T20:38:42Z" finished-at="2018-09-06T20:38:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-      </class> <!-- tests.MonthAdditionTest -->
-    </test> <!-- month addition -->
+      </class> <!-- tests.SingleMonthAdditionTest -->
+    </test> <!-- Test Single Month Addition -->
+    <test name="Test Multiple Months Addition" duration-ms="39312" started-at="2018-09-06T20:38:47Z" finished-at="2018-09-06T20:39:26Z">
+      <class name="tests.MultipleMonthsAdditionTest">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.MultipleMonthsAdditionTest@4f933fd1]" name="setupTest" is-config="true" duration-ms="16411" started-at="2018-09-06T20:38:47Z" finished-at="2018-09-06T20:39:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="runMultipleMonthsAdditionTest()[pri:0, instance:tests.MultipleMonthsAdditionTest@4f933fd1]" name="runMultipleMonthsAdditionTest" duration-ms="18010" started-at="2018-09-06T20:39:04Z" finished-at="2018-09-06T20:39:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<b>Now testing: Multiple Month Addition<b>]]>
+            </line>
+            <line>
+              <![CDATA[First target month/ year to look for: Mar, 2020]]>
+            </line>
+            <line>
+              <![CDATA[Received month and year: Mar 2020(1)]]>
+            </line>
+            <line>
+              <![CDATA[Second target month/ year to look for: Dec, 2018]]>
+            </line>
+            <line>
+              <![CDATA[Received month and year: Dec 2018(2)]]>
+            </line>
+            <line>
+              <![CDATA[Third target month/ year to look for: Sep, 2019]]>
+            </line>
+            <line>
+              <![CDATA[Received month and year: Sep 2019(3)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runMultipleMonthsAdditionTest -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.MultipleMonthsAdditionTest@4f933fd1]" name="wrapUp" is-config="true" duration-ms="4889" started-at="2018-09-06T20:39:22Z" finished-at="2018-09-06T20:39:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+      </class> <!-- tests.MultipleMonthsAdditionTest -->
+    </test> <!-- Test Multiple Months Addition -->
   </suite> <!-- FullTest -->
 </testng-results>

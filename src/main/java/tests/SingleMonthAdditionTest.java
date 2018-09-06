@@ -21,7 +21,7 @@ public class SingleMonthAdditionTest extends BaseTest {
     public void AddNewMonth() {
         Reporter.log("<b>Now testing: New Month Addition<b>");
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
-        mcm.pressAddNewMonthButton();
+        /*mcm.pressAddNewMonthButton();
         AddMonthDialog amd = new AddMonthDialog(driver);
 
         amd.expandMonthSpinner();
@@ -30,20 +30,27 @@ public class SingleMonthAdditionTest extends BaseTest {
         months.get(Calendar.getInstance().get(Calendar.MONTH)).click();
 
         amd.expandYearSpinner();
-        List<MobileElement> years = amd.getYearsListInSpinnerAsListOfMobileElements();
+        List<MobileElement> years = amd.getYearsListInSpinnerAsListOfMobileElements();*/
+
+
+
         int targetYear = Calendar.getInstance().get(Calendar.YEAR) + 1;
+        String targetMonth = myAppUtili.getMonthAbbrev(Calendar.getInstance().get(Calendar.MONTH));
 
-
+        mcm.automaticallyAddNewMonth(targetMonth, Integer.toString(targetYear));
+        /*
         //TODO: Refactor this, fixed quick and dirty
         try {
             for (MobileElement el : years) {
-                if (Integer.parseInt(el.getText()) == targetYear)
+                if (Integer.parseInt(el.getText()) == targetYear) {
                     el.click();
+                    break;
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        amd.clickOkButton();
+        amd.clickOkButton();*/
 
         /*WebElement monthList = mcm.getTheExistingMonthsList();
         if (monthList!=null)

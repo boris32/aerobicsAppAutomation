@@ -14,7 +14,7 @@ public class DataHandler{
 
 
 public void test() throws SQLException{
-        try {
+            /*try {
                 Class.forName("org.sqlite.JDBC");
                 //DriverManager.registerDriver(new org.sqlite.JDBC());
 
@@ -34,7 +34,7 @@ public void test() throws SQLException{
                 e.printStackTrace();}
             catch(SQLException ex){
                 ex.printStackTrace();
-        }
+        }*/
 
     }
 }

@@ -4,35 +4,42 @@
     -->
 
 
-        <test name="Test initial layout">
-            <classes>
-                <class name="tests.LayoutTest" />
-            </classes>
-        </test>
-        <test name="Test Add Month Layout">
-            <classes>
-                <class name="tests.AddMonthDialogLayoutTest"/>
-            </classes>
-        </test>
+         <test name="Test initial layout">
+             <classes>
+                 <class name="tests.LayoutTest" />
+             </classes>
+         </test>
+         <test name="Test Add Month Layout">
+             <classes>
+                 <class name="tests.AddMonthDialogLayoutTest"/>
+             </classes>
+         </test>
 
-        <test name="Test Months List">
-            <classes>
-                <class name="tests.SingleMonthAdditionTest"/>
-            </classes>
-        </test>
+         <test name="Test Months List">
+             <classes>
+                 <class name="tests.AddMonthDialogMonthListTest"/>
+             </classes>
+         </test>
 
 
-        <test name="Test Years List">
-            <classes>
-                <class name="tests.AddMonthsDialogYearsListTest"/>
-            </classes>
-        </test>
+         <test name="Test Years List">
+             <classes>
+                 <class name="tests.AddMonthsDialogYearsListTest"/>
+             </classes>
+         </test>
 
-    <test name="month addition">
-        <classes>
-            <class name="tests.MonthAdditionTest"/>
-        </classes>
-    </test>
+         <test name="Test Single Month Addition">
+             <classes>
+                 <class name="tests.SingleMonthAdditionTest"/>
+             </classes>
+         </test>
 
-                
-    </suite>
+
+            <test name="Test Multiple Months Addition">
+                <classes>
+                    <class name="tests.MultipleMonthsAdditionTest"/>
+                </classes>
+            </test>
+
+
+        </suite>

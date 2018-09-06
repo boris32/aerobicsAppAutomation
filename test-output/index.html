@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-FullTest">
-                    <span class="test-stats">5 tests</span>
+                    <span class="test-stats">6 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,17 @@
                     <div class="method-list-content passed suite-FullTest">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FullTest" title="tests.MonthAdditionTest" hash-for-method="AddNewMonth">AddNewMonth</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-FullTest" title="tests.SingleMonthAdditionTest" hash-for-method="AddNewMonth">AddNewMonth</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-FullTest" title="tests.AddMonthsDialogYearsListTest" hash-for-method="checkYearsList">checkYearsList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FullTest" title="tests.MultipleMonthsAdditionTest" hash-for-method="runMultipleMonthsAdditionTest">runMultipleMonthsAdditionTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -185,7 +190,7 @@
           <div class="suite-FullTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.MonthAdditionTest</span>
+              <span class="class-name">tests.SingleMonthAdditionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -193,6 +198,21 @@
                   <a name="AddNewMonth">
                   </a> <!-- AddNewMonth -->
                   <span class="method-name">AddNewMonth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTest-class-passed -->
+          <div class="suite-FullTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.MultipleMonthsAdditionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runMultipleMonthsAdditionTest">
+                  </a> <!-- runMultipleMonthsAdditionTest -->
+                  <span class="method-name">runMultipleMonthsAdditionTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,11 +262,16 @@
       &lt;class name=&quot;tests.AddMonthsDialogYearsListTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Years List --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;month addition&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Single Month Addition&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.MonthAdditionTest&quot;/&gt;
+      &lt;class name=&quot;tests.SingleMonthAdditionTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- month addition --&gt;
+  &lt;/test&gt; &lt;!-- Test Single Month Addition --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Multiple Months Addition&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.MultipleMonthsAdditionTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Multiple Months Addition --&gt;
 &lt;/suite&gt; &lt;!-- FullTest --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -270,7 +295,10 @@
                 <span class="test-name">Test Years List (1 class)</span>
               </li>
               <li>
-                <span class="test-name">month addition (1 class)</span>
+                <span class="test-name">Test Single Month Addition (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test Multiple Months Addition (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -296,32 +324,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AddNewMonth')
-data.setCell(0, 2, 'tests.MonthAdditionTest')
-data.setCell(0, 3, 17665);
+data.setCell(0, 1, 'runMultipleMonthsAdditionTest')
+data.setCell(0, 2, 'tests.MultipleMonthsAdditionTest')
+data.setCell(0, 3, 18010);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkYearsList')
-data.setCell(1, 2, 'tests.AddMonthsDialogYearsListTest')
-data.setCell(1, 3, 4775);
+data.setCell(1, 1, 'AddNewMonth')
+data.setCell(1, 2, 'tests.SingleMonthAdditionTest')
+data.setCell(1, 3, 6594);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyThatMonthsListIsCorrect')
-data.setCell(2, 2, 'tests.AddMonthDialogMonthListTest')
-data.setCell(2, 3, 3580);
+data.setCell(2, 1, 'checkYearsList')
+data.setCell(2, 2, 'tests.AddMonthsDialogYearsListTest')
+data.setCell(2, 3, 5153);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyAddMonthDialogLayout')
-data.setCell(3, 2, 'tests.AddMonthDialogLayoutTest')
-data.setCell(3, 3, 2725);
+data.setCell(3, 1, 'verifyThatMonthsListIsCorrect')
+data.setCell(3, 2, 'tests.AddMonthDialogMonthListTest')
+data.setCell(3, 3, 3175);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testLayout')
-data.setCell(4, 2, 'tests.LayoutTest')
-data.setCell(4, 3, 893);
+data.setCell(4, 1, 'verifyAddMonthDialogLayout')
+data.setCell(4, 2, 'tests.AddMonthDialogLayoutTest')
+data.setCell(4, 3, 2014);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testLayout')
+data.setCell(5, 2, 'tests.LayoutTest')
+data.setCell(5, 3, 888);
 window.suiteTableData['FullTest']= { tableData: data, tableDiv: 'times-div-FullTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-FullTest">
               </div> <!-- times-div-FullTest -->
             </div> <!-- times-div -->
@@ -364,8 +396,20 @@ return data;
               <span class="reporter-method-name">AddNewMonth</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><b>Now testing: New Month Addition<b></span>
-                <span class="reporter-method-output">Target month/ year to look for: Aug, 2019</span>
-                <span class="reporter-method-output">Month list item at index 0 returned: Aug 2019(1)</span>
+                <span class="reporter-method-output">Target month/ year to look for: Sep, 2019</span>
+                <span class="reporter-method-output">Month list item at index 0 returned: Sep 2019(1)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runMultipleMonthsAdditionTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><b>Now testing: Multiple Month Addition<b></span>
+                <span class="reporter-method-output">First target month/ year to look for: Mar, 2020</span>
+                <span class="reporter-method-output">Received month and year: Mar 2020(1)</span>
+                <span class="reporter-method-output">Second target month/ year to look for: Dec, 2018</span>
+                <span class="reporter-method-output">Received month and year: Dec 2018(2)</span>
+                <span class="reporter-method-output">Third target month/ year to look for: Sep, 2019</span>
+                <span class="reporter-method-output">Received month and year: Sep 2019(3)</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -390,71 +434,86 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testLayout</span>
-                <span class="method-start">35346 ms</span>
+                <span class="method-start">17541 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">wrapUp</span>
-                <span class="method-start">36240 ms</span>
+                <span class="method-start">18430 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AddMonthDialogLayoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">41754 ms</span>
+                <span class="method-start">23610 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyAddMonthDialogLayout</span>
-                <span class="method-start">58993 ms</span>
+                <span class="method-start">40062 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">wrapUp</span>
-                <span class="method-start">61718 ms</span>
+                <span class="method-start">42077 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AddMonthDialogMonthListTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">66783 ms</span>
+                <span class="method-start">46800 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyThatMonthsListIsCorrect</span>
-                <span class="method-start">83293 ms</span>
+                <span class="method-start">63501 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">wrapUp</span>
-                <span class="method-start">86874 ms</span>
+                <span class="method-start">66676 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AddMonthsDialogYearsListTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">91930 ms</span>
+                <span class="method-start">71698 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkYearsList</span>
-                <span class="method-start">108142 ms</span>
+                <span class="method-start">88334 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">wrapUp</span>
-                <span class="method-start">112917 ms</span>
+                <span class="method-start">93487 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.MonthAdditionTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.SingleMonthAdditionTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">117944 ms</span>
+                <span class="method-start">98685 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">AddNewMonth</span>
-                <span class="method-start">134350 ms</span>
+                <span class="method-start">115268 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">wrapUp</span>
-                <span class="method-start">152015 ms</span>
+                <span class="method-start">121862 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.MultipleMonthsAdditionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">126862 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">runMultipleMonthsAdditionTest</span>
+                <span class="method-start">143273 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">wrapUp</span>
+                <span class="method-start">161284 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

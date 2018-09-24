@@ -67,6 +67,9 @@ public class MonthsCustomersManagementScreen extends BasePage {
             return monthsListItems;
         }
 
+
+
+
         public void automaticallyAddNewMonth(String desiredMonth, String desiredYear) {
 
             pressAddNewMonthButton();
@@ -93,8 +96,6 @@ public class MonthsCustomersManagementScreen extends BasePage {
             amd.clickOkButton();
 
         }
-
-
 
 
         //CUSTOMER RELATED METHODS

@@ -1,247 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[<b>Now testing: Management screen layout<b>]]>
-    </line>
-    <line>
-      <![CDATA[<b><font color="green">PASSED: </font></b>The layout of Management screen is correct. All the main controls are present.]]>
-    </line>
-    <line>
-      <![CDATA[<b>Now testing: Add Month dialog layout<b>]]>
-    </line>
-    <line>
-      <![CDATA[<b><font color="green">PASSED: </font></b>The layout of 'Add Month Dialog' is correct. All the main controls are present.]]>
-    </line>
-    <line>
-      <![CDATA[<b>Now testing: Months list content on the add month dialog<b>]]>
-    </line>
-    <line>
-      <![CDATA[<b><font color="green">PASSED: </font></b> Months list on the 'Add Month Dialog' contains the correct elements: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]]]>
-    </line>
-    <line>
-      <![CDATA[<b>Now testing: Years list content on the add month dialog<b>]]>
-    </line>
-    <line>
-      <![CDATA[<b><font color="green">PASSED: </font></b>Months list on the 'Add Month Dialog' contains the correct elements: [2018, 2019, 2020]]]>
-    </line>
-    <line>
-      <![CDATA[<b>Now testing: New Month Addition<b>]]>
-    </line>
-    <line>
-      <![CDATA[Target month/ year to look for: Sep, 2019]]>
-    </line>
-    <line>
-      <![CDATA[Month list item at index 0 returned: Sep 2019(1)]]>
-    </line>
-    <line>
-      <![CDATA[<b>Now testing: Multiple Month Addition<b>]]>
-    </line>
-    <line>
-      <![CDATA[First target month/ year to look for: Mar, 2020]]>
-    </line>
-    <line>
-      <![CDATA[Received month and year: Mar 2020(1)]]>
-    </line>
-    <line>
-      <![CDATA[Second target month/ year to look for: Dec, 2018]]>
-    </line>
-    <line>
-      <![CDATA[Received month and year: Dec 2018(2)]]>
-    </line>
-    <line>
-      <![CDATA[Third target month/ year to look for: Sep, 2019]]>
-    </line>
-    <line>
-      <![CDATA[Received month and year: Sep 2019(3)]]>
-    </line>
-    <line>
-      <![CDATA[Is the 'duplicaet month' dialog displayed?true]]>
-    </line>
-    <line>
-      <![CDATA[Dialog title reads as follows: SORRY!]]>
-    </line>
-    <line>
-      <![CDATA[Dialog message reads as follows: The month - year combination that you have selected is already in use. Please check the Months list at the left-hand side of main app screen.]]>
-    </line>
   </reporter-output>
-  <suite name="FullTest" duration-ms="214114" started-at="2018-09-24T20:11:04Z" finished-at="2018-09-24T20:14:38Z">
+  <suite name="FullTest" duration-ms="43853" started-at="2018-09-24T20:49:27Z" finished-at="2018-09-24T20:50:11Z">
     <groups>
     </groups>
-    <test name="Test initial layout" duration-ms="40501" started-at="2018-09-24T20:11:04Z" finished-at="2018-09-24T20:11:44Z">
-      <class name="tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect@7ca48474]" name="setupTest" is-config="true" duration-ms="34702" started-at="2018-09-24T20:11:04Z" finished-at="2018-09-24T20:11:39Z">
+    <test name="Add Customer Dialog Layout" duration-ms="43853" started-at="2018-09-24T20:49:27Z" finished-at="2018-09-24T20:50:11Z">
+      <class name="tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect@7ca48474]" name="setupTest" is-config="true" duration-ms="37139" started-at="2018-09-24T20:49:27Z" finished-at="2018-09-24T20:50:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="testLayout()[pri:0, instance:tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect@7ca48474]" name="testLayout" duration-ms="960" started-at="2018-09-24T20:11:39Z" finished-at="2018-09-24T20:11:40Z">
+        <test-method status="PASS" signature="testAddNewCustomerLayout()[pri:0, instance:tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect@7ca48474]" name="testAddNewCustomerLayout" duration-ms="1678" started-at="2018-09-24T20:50:04Z" finished-at="2018-09-24T20:50:06Z">
           <reporter-output>
-            <line>
-              <![CDATA[<b>Now testing: Management screen layout<b>]]>
-            </line>
-            <line>
-              <![CDATA[<b><font color="green">PASSED: </font></b>The layout of Management screen is correct. All the main controls are present.]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLayout -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect@7ca48474]" name="wrapUp" is-config="true" duration-ms="4826" started-at="2018-09-24T20:11:40Z" finished-at="2018-09-24T20:11:44Z">
+        </test-method> <!-- testAddNewCustomerLayout -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect@7ca48474]" name="wrapUp" is-config="true" duration-ms="5022" started-at="2018-09-24T20:50:06Z" finished-at="2018-09-24T20:50:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-      </class> <!-- tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect -->
-    </test> <!-- Test initial layout -->
-    <test name="Test Add Month Layout" duration-ms="23894" started-at="2018-09-24T20:11:44Z" finished-at="2018-09-24T20:12:08Z">
-      <class name="tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect@1810399e]" name="setupTest" is-config="true" duration-ms="16648" started-at="2018-09-24T20:11:44Z" finished-at="2018-09-24T20:12:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="verifyAddMonthDialogLayout()[pri:0, instance:tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect@1810399e]" name="verifyAddMonthDialogLayout" duration-ms="2195" started-at="2018-09-24T20:12:01Z" finished-at="2018-09-24T20:12:03Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<b>Now testing: Add Month dialog layout<b>]]>
-            </line>
-            <line>
-              <![CDATA[<b><font color="green">PASSED: </font></b>The layout of 'Add Month Dialog' is correct. All the main controls are present.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyAddMonthDialogLayout -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect@1810399e]" name="wrapUp" is-config="true" duration-ms="5050" started-at="2018-09-24T20:12:03Z" finished-at="2018-09-24T20:12:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrapUp -->
-      </class> <!-- tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect -->
-    </test> <!-- Test Add Month Layout -->
-    <test name="Test Months List" duration-ms="24600" started-at="2018-09-24T20:12:08Z" finished-at="2018-09-24T20:12:33Z">
-      <class name="tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect@56f4468b]" name="setupTest" is-config="true" duration-ms="16501" started-at="2018-09-24T20:12:08Z" finished-at="2018-09-24T20:12:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="verifyThatMonthsListIsCorrect()[pri:0, instance:tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect@56f4468b]" name="verifyThatMonthsListIsCorrect" duration-ms="3062" started-at="2018-09-24T20:12:25Z" finished-at="2018-09-24T20:12:28Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<b>Now testing: Months list content on the add month dialog<b>]]>
-            </line>
-            <line>
-              <![CDATA[<b><font color="green">PASSED: </font></b> Months list on the 'Add Month Dialog' contains the correct elements: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyThatMonthsListIsCorrect -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect@56f4468b]" name="wrapUp" is-config="true" duration-ms="5035" started-at="2018-09-24T20:12:28Z" finished-at="2018-09-24T20:12:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrapUp -->
-      </class> <!-- tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect -->
-    </test> <!-- Test Months List -->
-    <test name="Test Years List" duration-ms="24362" started-at="2018-09-24T20:12:33Z" finished-at="2018-09-24T20:12:57Z">
-      <class name="tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect@6d00a15d]" name="setupTest" is-config="true" duration-ms="16530" started-at="2018-09-24T20:12:33Z" finished-at="2018-09-24T20:12:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="checkYearsList()[pri:0, instance:tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect@6d00a15d]" name="checkYearsList" duration-ms="2893" started-at="2018-09-24T20:12:50Z" finished-at="2018-09-24T20:12:52Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<b>Now testing: Years list content on the add month dialog<b>]]>
-            </line>
-            <line>
-              <![CDATA[<b><font color="green">PASSED: </font></b>Months list on the 'Add Month Dialog' contains the correct elements: [2018, 2019, 2020]]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- checkYearsList -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect@6d00a15d]" name="wrapUp" is-config="true" duration-ms="4938" started-at="2018-09-24T20:12:52Z" finished-at="2018-09-24T20:12:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrapUp -->
-      </class> <!-- tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect -->
-    </test> <!-- Test Years List -->
-    <test name="Test Single Month Addition" duration-ms="27602" started-at="2018-09-24T20:12:57Z" finished-at="2018-09-24T20:13:25Z">
-      <class name="tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly@62ee68d8]" name="setupTest" is-config="true" duration-ms="16311" started-at="2018-09-24T20:12:57Z" finished-at="2018-09-24T20:13:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="AddNewMonth()[pri:0, instance:tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly@62ee68d8]" name="AddNewMonth" duration-ms="6418" started-at="2018-09-24T20:13:14Z" finished-at="2018-09-24T20:13:20Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<b>Now testing: New Month Addition<b>]]>
-            </line>
-            <line>
-              <![CDATA[Target month/ year to look for: Sep, 2019]]>
-            </line>
-            <line>
-              <![CDATA[Month list item at index 0 returned: Sep 2019(1)]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AddNewMonth -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly@62ee68d8]" name="wrapUp" is-config="true" duration-ms="4871" started-at="2018-09-24T20:13:20Z" finished-at="2018-09-24T20:13:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrapUp -->
-      </class> <!-- tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly -->
-    </test> <!-- Test Single Month Addition -->
-    <test name="Test Multiple Months Addition" duration-ms="39334" started-at="2018-09-24T20:13:25Z" finished-at="2018-09-24T20:14:04Z">
-      <class name="tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly@4f933fd1]" name="setupTest" is-config="true" duration-ms="16565" started-at="2018-09-24T20:13:25Z" finished-at="2018-09-24T20:13:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="runMultipleMonthsAdditionTest()[pri:0, instance:tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly@4f933fd1]" name="runMultipleMonthsAdditionTest" duration-ms="17689" started-at="2018-09-24T20:13:42Z" finished-at="2018-09-24T20:13:59Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<b>Now testing: Multiple Month Addition<b>]]>
-            </line>
-            <line>
-              <![CDATA[First target month/ year to look for: Mar, 2020]]>
-            </line>
-            <line>
-              <![CDATA[Received month and year: Mar 2020(1)]]>
-            </line>
-            <line>
-              <![CDATA[Second target month/ year to look for: Dec, 2018]]>
-            </line>
-            <line>
-              <![CDATA[Received month and year: Dec 2018(2)]]>
-            </line>
-            <line>
-              <![CDATA[Third target month/ year to look for: Sep, 2019]]>
-            </line>
-            <line>
-              <![CDATA[Received month and year: Sep 2019(3)]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runMultipleMonthsAdditionTest -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly@4f933fd1]" name="wrapUp" is-config="true" duration-ms="5077" started-at="2018-09-24T20:13:59Z" finished-at="2018-09-24T20:14:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrapUp -->
-      </class> <!-- tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly -->
-    </test> <!-- Test Multiple Months Addition -->
-    <test name="Cannot create duplicate months" duration-ms="33744" started-at="2018-09-24T20:14:04Z" finished-at="2018-09-24T20:14:38Z">
-      <class name="tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths@68be2bc2]" name="setupTest" is-config="true" duration-ms="16399" started-at="2018-09-24T20:14:04Z" finished-at="2018-09-24T20:14:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="TryToCreateDuplicateMonths()[pri:0, instance:tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths@68be2bc2]" name="TryToCreateDuplicateMonths" duration-ms="12442" started-at="2018-09-24T20:14:21Z" finished-at="2018-09-24T20:14:33Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Is the 'duplicaet month' dialog displayed?true]]>
-            </line>
-            <line>
-              <![CDATA[Dialog title reads as follows: SORRY!]]>
-            </line>
-            <line>
-              <![CDATA[Dialog message reads as follows: The month - year combination that you have selected is already in use. Please check the Months list at the left-hand side of main app screen.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TryToCreateDuplicateMonths -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths@68be2bc2]" name="wrapUp" is-config="true" duration-ms="4903" started-at="2018-09-24T20:14:33Z" finished-at="2018-09-24T20:14:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrapUp -->
-      </class> <!-- tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths -->
-    </test> <!-- Cannot create duplicate months -->
+      </class> <!-- tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect -->
+    </test> <!-- Add Customer Dialog Layout -->
   </suite> <!-- FullTest -->
 </testng-results>

@@ -65,16 +65,16 @@
       <![CDATA[Dialog message reads as follows: The month - year combination that you have selected is already in use. Please check the Months list at the left-hand side of main app screen.]]>
     </line>
   </reporter-output>
-  <suite name="FullTest" duration-ms="209646" started-at="2018-09-24T19:44:16Z" finished-at="2018-09-24T19:47:46Z">
+  <suite name="FullTest" duration-ms="214114" started-at="2018-09-24T20:11:04Z" finished-at="2018-09-24T20:14:38Z">
     <groups>
     </groups>
-    <test name="Test initial layout" duration-ms="37527" started-at="2018-09-24T19:44:16Z" finished-at="2018-09-24T19:44:54Z">
-      <class name="tests.LayoutTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.LayoutTest@7ca48474]" name="setupTest" is-config="true" duration-ms="31901" started-at="2018-09-24T19:44:16Z" finished-at="2018-09-24T19:44:48Z">
+    <test name="Test initial layout" duration-ms="40501" started-at="2018-09-24T20:11:04Z" finished-at="2018-09-24T20:11:44Z">
+      <class name="tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect@7ca48474]" name="setupTest" is-config="true" duration-ms="34702" started-at="2018-09-24T20:11:04Z" finished-at="2018-09-24T20:11:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="testLayout()[pri:0, instance:tests.LayoutTest@7ca48474]" name="testLayout" duration-ms="846" started-at="2018-09-24T19:44:48Z" finished-at="2018-09-24T19:44:49Z">
+        <test-method status="PASS" signature="testLayout()[pri:0, instance:tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect@7ca48474]" name="testLayout" duration-ms="960" started-at="2018-09-24T20:11:39Z" finished-at="2018-09-24T20:11:40Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: Management screen layout<b>]]>
@@ -84,19 +84,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- testLayout -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.LayoutTest@7ca48474]" name="wrapUp" is-config="true" duration-ms="4767" started-at="2018-09-24T19:44:49Z" finished-at="2018-09-24T19:44:54Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect@7ca48474]" name="wrapUp" is-config="true" duration-ms="4826" started-at="2018-09-24T20:11:40Z" finished-at="2018-09-24T20:11:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-      </class> <!-- tests.LayoutTest -->
+      </class> <!-- tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect -->
     </test> <!-- Test initial layout -->
-    <test name="Test Add Month Layout" duration-ms="23144" started-at="2018-09-24T19:44:54Z" finished-at="2018-09-24T19:45:17Z">
-      <class name="tests.AddMonthDialogLayoutTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthDialogLayoutTest@1810399e]" name="setupTest" is-config="true" duration-ms="16225" started-at="2018-09-24T19:44:54Z" finished-at="2018-09-24T19:45:10Z">
+    <test name="Test Add Month Layout" duration-ms="23894" started-at="2018-09-24T20:11:44Z" finished-at="2018-09-24T20:12:08Z">
+      <class name="tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect@1810399e]" name="setupTest" is-config="true" duration-ms="16648" started-at="2018-09-24T20:11:44Z" finished-at="2018-09-24T20:12:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="verifyAddMonthDialogLayout()[pri:0, instance:tests.AddMonthDialogLayoutTest@1810399e]" name="verifyAddMonthDialogLayout" duration-ms="2037" started-at="2018-09-24T19:45:10Z" finished-at="2018-09-24T19:45:12Z">
+        <test-method status="PASS" signature="verifyAddMonthDialogLayout()[pri:0, instance:tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect@1810399e]" name="verifyAddMonthDialogLayout" duration-ms="2195" started-at="2018-09-24T20:12:01Z" finished-at="2018-09-24T20:12:03Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: Add Month dialog layout<b>]]>
@@ -106,19 +106,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyAddMonthDialogLayout -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthDialogLayoutTest@1810399e]" name="wrapUp" is-config="true" duration-ms="4882" started-at="2018-09-24T19:45:12Z" finished-at="2018-09-24T19:45:17Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect@1810399e]" name="wrapUp" is-config="true" duration-ms="5050" started-at="2018-09-24T20:12:03Z" finished-at="2018-09-24T20:12:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-      </class> <!-- tests.AddMonthDialogLayoutTest -->
+      </class> <!-- tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect -->
     </test> <!-- Test Add Month Layout -->
-    <test name="Test Months List" duration-ms="24420" started-at="2018-09-24T19:45:17Z" finished-at="2018-09-24T19:45:42Z">
-      <class name="tests.AddMonthDialogMonthListTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthDialogMonthListTest@56f4468b]" name="setupTest" is-config="true" duration-ms="16235" started-at="2018-09-24T19:45:17Z" finished-at="2018-09-24T19:45:33Z">
+    <test name="Test Months List" duration-ms="24600" started-at="2018-09-24T20:12:08Z" finished-at="2018-09-24T20:12:33Z">
+      <class name="tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect@56f4468b]" name="setupTest" is-config="true" duration-ms="16501" started-at="2018-09-24T20:12:08Z" finished-at="2018-09-24T20:12:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="verifyThatMonthsListIsCorrect()[pri:0, instance:tests.AddMonthDialogMonthListTest@56f4468b]" name="verifyThatMonthsListIsCorrect" duration-ms="3174" started-at="2018-09-24T19:45:33Z" finished-at="2018-09-24T19:45:37Z">
+        <test-method status="PASS" signature="verifyThatMonthsListIsCorrect()[pri:0, instance:tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect@56f4468b]" name="verifyThatMonthsListIsCorrect" duration-ms="3062" started-at="2018-09-24T20:12:25Z" finished-at="2018-09-24T20:12:28Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: Months list content on the add month dialog<b>]]>
@@ -128,19 +128,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyThatMonthsListIsCorrect -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthDialogMonthListTest@56f4468b]" name="wrapUp" is-config="true" duration-ms="5008" started-at="2018-09-24T19:45:37Z" finished-at="2018-09-24T19:45:42Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect@56f4468b]" name="wrapUp" is-config="true" duration-ms="5035" started-at="2018-09-24T20:12:28Z" finished-at="2018-09-24T20:12:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-      </class> <!-- tests.AddMonthDialogMonthListTest -->
+      </class> <!-- tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect -->
     </test> <!-- Test Months List -->
-    <test name="Test Years List" duration-ms="23859" started-at="2018-09-24T19:45:42Z" finished-at="2018-09-24T19:46:05Z">
-      <class name="tests.AddMonthsDialogYearsListTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.AddMonthsDialogYearsListTest@6d00a15d]" name="setupTest" is-config="true" duration-ms="16201" started-at="2018-09-24T19:45:42Z" finished-at="2018-09-24T19:45:58Z">
+    <test name="Test Years List" duration-ms="24362" started-at="2018-09-24T20:12:33Z" finished-at="2018-09-24T20:12:57Z">
+      <class name="tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect@6d00a15d]" name="setupTest" is-config="true" duration-ms="16530" started-at="2018-09-24T20:12:33Z" finished-at="2018-09-24T20:12:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="checkYearsList()[pri:0, instance:tests.AddMonthsDialogYearsListTest@6d00a15d]" name="checkYearsList" duration-ms="2748" started-at="2018-09-24T19:45:58Z" finished-at="2018-09-24T19:46:01Z">
+        <test-method status="PASS" signature="checkYearsList()[pri:0, instance:tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect@6d00a15d]" name="checkYearsList" duration-ms="2893" started-at="2018-09-24T20:12:50Z" finished-at="2018-09-24T20:12:52Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: Years list content on the add month dialog<b>]]>
@@ -150,19 +150,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkYearsList -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.AddMonthsDialogYearsListTest@6d00a15d]" name="wrapUp" is-config="true" duration-ms="4908" started-at="2018-09-24T19:46:01Z" finished-at="2018-09-24T19:46:05Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect@6d00a15d]" name="wrapUp" is-config="true" duration-ms="4938" started-at="2018-09-24T20:12:52Z" finished-at="2018-09-24T20:12:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-      </class> <!-- tests.AddMonthsDialogYearsListTest -->
+      </class> <!-- tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect -->
     </test> <!-- Test Years List -->
-    <test name="Test Single Month Addition" duration-ms="27694" started-at="2018-09-24T19:46:05Z" finished-at="2018-09-24T19:46:33Z">
-      <class name="tests.SingleMonthAdditionTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.SingleMonthAdditionTest@62ee68d8]" name="setupTest" is-config="true" duration-ms="16202" started-at="2018-09-24T19:46:05Z" finished-at="2018-09-24T19:46:22Z">
+    <test name="Test Single Month Addition" duration-ms="27602" started-at="2018-09-24T20:12:57Z" finished-at="2018-09-24T20:13:25Z">
+      <class name="tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly@62ee68d8]" name="setupTest" is-config="true" duration-ms="16311" started-at="2018-09-24T20:12:57Z" finished-at="2018-09-24T20:13:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="AddNewMonth()[pri:0, instance:tests.SingleMonthAdditionTest@62ee68d8]" name="AddNewMonth" duration-ms="6535" started-at="2018-09-24T19:46:22Z" finished-at="2018-09-24T19:46:28Z">
+        <test-method status="PASS" signature="AddNewMonth()[pri:0, instance:tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly@62ee68d8]" name="AddNewMonth" duration-ms="6418" started-at="2018-09-24T20:13:14Z" finished-at="2018-09-24T20:13:20Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: New Month Addition<b>]]>
@@ -175,19 +175,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- AddNewMonth -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.SingleMonthAdditionTest@62ee68d8]" name="wrapUp" is-config="true" duration-ms="4955" started-at="2018-09-24T19:46:28Z" finished-at="2018-09-24T19:46:33Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly@62ee68d8]" name="wrapUp" is-config="true" duration-ms="4871" started-at="2018-09-24T20:13:20Z" finished-at="2018-09-24T20:13:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-      </class> <!-- tests.SingleMonthAdditionTest -->
+      </class> <!-- tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly -->
     </test> <!-- Test Single Month Addition -->
-    <test name="Test Multiple Months Addition" duration-ms="39373" started-at="2018-09-24T19:46:33Z" finished-at="2018-09-24T19:47:13Z">
-      <class name="tests.MultipleMonthsAdditionTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.MultipleMonthsAdditionTest@4f933fd1]" name="setupTest" is-config="true" duration-ms="16238" started-at="2018-09-24T19:46:33Z" finished-at="2018-09-24T19:46:49Z">
+    <test name="Test Multiple Months Addition" duration-ms="39334" started-at="2018-09-24T20:13:25Z" finished-at="2018-09-24T20:14:04Z">
+      <class name="tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly@4f933fd1]" name="setupTest" is-config="true" duration-ms="16565" started-at="2018-09-24T20:13:25Z" finished-at="2018-09-24T20:13:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="runMultipleMonthsAdditionTest()[pri:0, instance:tests.MultipleMonthsAdditionTest@4f933fd1]" name="runMultipleMonthsAdditionTest" duration-ms="18114" started-at="2018-09-24T19:46:49Z" finished-at="2018-09-24T19:47:08Z">
+        <test-method status="PASS" signature="runMultipleMonthsAdditionTest()[pri:0, instance:tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly@4f933fd1]" name="runMultipleMonthsAdditionTest" duration-ms="17689" started-at="2018-09-24T20:13:42Z" finished-at="2018-09-24T20:13:59Z">
           <reporter-output>
             <line>
               <![CDATA[<b>Now testing: Multiple Month Addition<b>]]>
@@ -212,19 +212,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- runMultipleMonthsAdditionTest -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.MultipleMonthsAdditionTest@4f933fd1]" name="wrapUp" is-config="true" duration-ms="5020" started-at="2018-09-24T19:47:08Z" finished-at="2018-09-24T19:47:13Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly@4f933fd1]" name="wrapUp" is-config="true" duration-ms="5077" started-at="2018-09-24T20:13:59Z" finished-at="2018-09-24T20:14:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-      </class> <!-- tests.MultipleMonthsAdditionTest -->
+      </class> <!-- tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly -->
     </test> <!-- Test Multiple Months Addition -->
-    <test name="Cannot create duplicate months" duration-ms="33550" started-at="2018-09-24T19:47:13Z" finished-at="2018-09-24T19:47:46Z">
-      <class name="tests.PreventAddingDuplicateMonthsTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.PreventAddingDuplicateMonthsTest@68be2bc2]" name="setupTest" is-config="true" duration-ms="16293" started-at="2018-09-24T19:47:13Z" finished-at="2018-09-24T19:47:29Z">
+    <test name="Cannot create duplicate months" duration-ms="33744" started-at="2018-09-24T20:14:04Z" finished-at="2018-09-24T20:14:38Z">
+      <class name="tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths@68be2bc2]" name="setupTest" is-config="true" duration-ms="16399" started-at="2018-09-24T20:14:04Z" finished-at="2018-09-24T20:14:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="TryToCreateDuplicateMonths()[pri:0, instance:tests.PreventAddingDuplicateMonthsTest@68be2bc2]" name="TryToCreateDuplicateMonths" duration-ms="12434" started-at="2018-09-24T19:47:29Z" finished-at="2018-09-24T19:47:41Z">
+        <test-method status="PASS" signature="TryToCreateDuplicateMonths()[pri:0, instance:tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths@68be2bc2]" name="TryToCreateDuplicateMonths" duration-ms="12442" started-at="2018-09-24T20:14:21Z" finished-at="2018-09-24T20:14:33Z">
           <reporter-output>
             <line>
               <![CDATA[Is the 'duplicaet month' dialog displayed?true]]>
@@ -237,11 +237,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- TryToCreateDuplicateMonths -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.PreventAddingDuplicateMonthsTest@68be2bc2]" name="wrapUp" is-config="true" duration-ms="4822" started-at="2018-09-24T19:47:41Z" finished-at="2018-09-24T19:47:46Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths@68be2bc2]" name="wrapUp" is-config="true" duration-ms="4903" started-at="2018-09-24T20:14:33Z" finished-at="2018-09-24T20:14:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-      </class> <!-- tests.PreventAddingDuplicateMonthsTest -->
+      </class> <!-- tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths -->
     </test> <!-- Cannot create duplicate months -->
   </suite> <!-- FullTest -->
 </testng-results>

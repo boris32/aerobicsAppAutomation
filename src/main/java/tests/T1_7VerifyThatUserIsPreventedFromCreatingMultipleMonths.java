@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 /**
  * Created by Boris on 9/17/2018.
  */
-public class PreventAddingDuplicateMonthsTest extends BaseTest {
+public class T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths extends BaseTest {
 
 
     @Test

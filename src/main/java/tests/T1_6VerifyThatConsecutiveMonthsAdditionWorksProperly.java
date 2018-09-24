@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by Boris on 9/3/2018.
  */
-public class MultipleMonthsAdditionTest extends BaseTest {
+public class T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly extends BaseTest {
 
     @Test
     public void runMultipleMonthsAdditionTest() {

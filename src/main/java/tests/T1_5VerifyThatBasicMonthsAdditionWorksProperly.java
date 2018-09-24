@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by Boris on 8/24/2018.
  */
-public class SingleMonthAdditionTest extends BaseTest {
+public class T1_5VerifyThatBasicMonthsAdditionWorksProperly extends BaseTest {
 
     @Test
     public void AddNewMonth() {

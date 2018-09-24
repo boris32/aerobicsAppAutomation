@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [FullTest]">
   <test thread-count="5" name="Cannot create duplicate months(failed)">
     <classes>
-      <class name="tests.PreventAddingDuplicateMonthsTest">
+      <class name="tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths">
         <methods>
           <include name="wrapUp"/>
           <include name="TryToCreateDuplicateMonths"/>
           <include name="setupTest"/>
         </methods>
-      </class> <!-- tests.PreventAddingDuplicateMonthsTest -->
+      </class> <!-- tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonthsmCreatingMultipleMonths -->
     </classes>
   </test> <!-- Cannot create duplicate months(failed) -->
 </suite> <!-- Failed suite [FullTest] -->

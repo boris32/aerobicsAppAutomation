@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by Boris on 7/7/2018.
  */
-public class AddMonthDialogMonthListTest extends BaseTest {
+public class T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect extends BaseTest {
 
     @Test
     public void verifyThatMonthsListIsCorrect() {

@@ -12,7 +12,7 @@ import org.testng.Assert;
 /**
  * Created by Boris on 7/6/2018.
  */
-public class AddMonthDialogLayoutTest extends BaseTest {
+public class T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect extends BaseTest {
 
 
     @Test

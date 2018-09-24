@@ -6,46 +6,47 @@
 
          <test name="Test initial layout">
              <classes>
-                 <class name="tests.LayoutTest" />
+                 <class name="tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect" />
              </classes>
          </test>
          <test name="Test Add Month Layout">
              <classes>
-                 <class name="tests.AddMonthDialogLayoutTest"/>
+                 <class name="tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect"/>
              </classes>
          </test>
 
          <test name="Test Months List">
              <classes>
-                 <class name="tests.AddMonthDialogMonthListTest"/>
+                 <class name="tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect"/>
              </classes>
          </test>
 
 
          <test name="Test Years List">
              <classes>
-                 <class name="tests.AddMonthsDialogYearsListTest"/>
+                 <class name="tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect"/>
              </classes>
          </test>
 
          <test name="Test Single Month Addition">
              <classes>
-                 <class name="tests.SingleMonthAdditionTest"/>
+                 <class name="tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly"/>
              </classes>
          </test>
 
 
             <test name="Test Multiple Months Addition">
                 <classes>
-                    <class name="tests.MultipleMonthsAdditionTest"/>
+                    <class name="tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly"/>
                 </classes>
             </test>
 
     
     <test name="Cannot create duplicate months">
         <classes>
-            <class name="tests.PreventAddingDuplicateMonthsTest"/>
+            <class name="tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths"/>
         </classes>
     </test>
+
 
         </suite>

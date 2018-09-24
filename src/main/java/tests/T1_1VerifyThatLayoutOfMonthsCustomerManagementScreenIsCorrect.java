@@ -10,10 +10,10 @@ import org.testng.Assert;
 /**
  * Created by Boris on 6/24/2018.
  */
-public class LayoutTest extends BaseTest {
+public class T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect extends BaseTest {
 
 
-    public LayoutTest () {
+    public T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect() {
     }
 
     @Test

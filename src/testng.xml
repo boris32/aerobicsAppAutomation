@@ -41,5 +41,11 @@
                 </classes>
             </test>
 
+    
+    <test name="Cannot create duplicate months">
+        <classes>
+            <class name="tests.PreventAddingDuplicateMonthsTest"/>
+        </classes>
+    </test>
 
         </suite>

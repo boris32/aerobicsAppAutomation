@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test Add Month Layout</title>
+<title>TestNG:  Cannot create duplicate months</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test Add Month Layout</h2><table border='1' align="center">
+<h2 align='center'>Cannot create duplicate months</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 24 21:44:54 CEST 2018</td>
+<td>Started on:</td><td>Mon Sep 24 21:47:13 CEST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23144 ms)</td>
+<tr><td>Total time:</td><td>33 seconds (33550 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.AddMonthDialogLayoutTest.verifyAddMonthDialogLayout()'><b>verifyAddMonthDialogLayout</b><br>Test class: tests.AddMonthDialogLayoutTest<br/>
-<a href="#Output-1771667101" onClick='toggleBox("Output-1771667101", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.PreventAddingDuplicateMonthsTest.TryToCreateDuplicateMonths()'><b>TryToCreateDuplicateMonths</b><br>Test class: tests.PreventAddingDuplicateMonthsTest<br/>
+<a href="#Output-637241618" onClick='toggleBox("Output-637241618", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1771667101" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1771667101">
-<b>Now testing: Add Month dialog layout<b><br/>
-<b><font color="green">PASSED: </font></b>The layout of 'Add Month Dialog' is correct. All the main controls are present.<br/>
+<a href="#Output-637241618" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-637241618">
+Is the 'duplicaet month' dialog displayed?true<br/>
+Dialog title reads as follows: SORRY!<br/>
+Dialog message reads as follows: The month - year combination that you have selected is already in use. Please check the Months list at the left-hand side of main app screen.<br/>
 </div>
 </td>
 <td></td>
-<td>2</td>
-<td>tests.AddMonthDialogLayoutTest@1810399e</td></tr>
+<td>12</td>
+<td>tests.PreventAddingDuplicateMonthsTest@68be2bc2</td></tr>
 </table><p>
 </body>
 </html>

@@ -79,7 +79,6 @@ public class MonthsCustomersManagementScreen extends BasePage {
                     el.click();
                     break;
                 }
-
             }
 
             amd.expandYearSpinner();
@@ -94,6 +93,8 @@ public class MonthsCustomersManagementScreen extends BasePage {
             amd.clickOkButton();
 
         }
+
+
 
 
         //CUSTOMER RELATED METHODS

@@ -3,6 +3,10 @@ package infrastructure;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +25,7 @@ public class AddMonthDialog extends BasePage {
     private MobileElement listOfMonths;
     private MobileElement listOfYears;
 
+
     public AddMonthDialog (AppiumDriver<MobileElement> driver) {
 
         monthSpinner = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/spinnerMonth");
@@ -29,10 +34,13 @@ public class AddMonthDialog extends BasePage {
         addMonthCancel = (MobileElement) driver.findElementById("com.example.boris.myandroidapp:id/buttonMonthDialogCancel");
 
 
+
         this.driver = driver;
         //
         //
     }
+
+
 
     //Util:
     /*public void navigateToAddNewMonthDialog() {
@@ -114,6 +122,34 @@ public class AddMonthDialog extends BasePage {
         logger.info("Captured items listed in the 'Years' list (months spinner): " + strList);
         return strList;
     }
+
+    //Select specific month
+    public void selectMonth(String month) {
+        expandMonthSpinner();
+        List<MobileElement> months = getMonthsListInSpinnerAsListOfMobileElements();
+        for (MobileElement el : months) {
+            if (el.getText().toLowerCase().equals(month.toLowerCase())) {
+                el.click();
+                break;
+            }
+        }
+    }
+
+    //Select specific year
+    public void selectYear(String year) {
+        expandYearSpinner();
+        List<MobileElement> years = getYearsListInSpinnerAsListOfMobileElements();
+        for (MobileElement el : years) {
+            if (el.getText().toLowerCase().equals(year.toLowerCase())) {
+                WebDriverWait waiter = new WebDriverWait(driver, 60);
+                waiter.until(ExpectedConditions.elementToBeClickable(el));
+                el.click();
+                break;
+            }
+        }
+    }
+
+
 
 
 }

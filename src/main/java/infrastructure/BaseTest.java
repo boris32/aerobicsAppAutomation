@@ -34,7 +34,7 @@ public class BaseTest {
         //Reporter.log("Desired capabilities are now set.");
 
         driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), ds);
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         //Reporter.log("Driver configured.");
     }
 

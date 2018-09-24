@@ -1,14 +1,12 @@
 package tests;
 
-import infrastructure.AddMonthDialog;
 import infrastructure.BaseTest;
 import infrastructure.MonthsCustomersManagementScreen;
 import io.appium.java_client.MobileElement;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-import infrastructure.myAppUtili;
+import infrastructure.myAppUtil;
 import java.util.Calendar;
 import java.util.List;
 
@@ -21,21 +19,11 @@ public class SingleMonthAdditionTest extends BaseTest {
     public void AddNewMonth() {
         Reporter.log("<b>Now testing: New Month Addition<b>");
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
-        /*mcm.pressAddNewMonthButton();
-        AddMonthDialog amd = new AddMonthDialog(driver);
-
-        amd.expandMonthSpinner();
-        List<MobileElement> months = amd.getMonthsListInSpinnerAsListOfMobileElements();
-        String targetMonth = myAppUtili.getMonthAbbrev(Calendar.getInstance().get(Calendar.MONTH));
-        months.get(Calendar.getInstance().get(Calendar.MONTH)).click();
-
-        amd.expandYearSpinner();
-        List<MobileElement> years = amd.getYearsListInSpinnerAsListOfMobileElements();*/
 
 
 
         int targetYear = Calendar.getInstance().get(Calendar.YEAR) + 1;
-        String targetMonth = myAppUtili.getMonthAbbrev(Calendar.getInstance().get(Calendar.MONTH));
+        String targetMonth = myAppUtil.getMonthAbbrev(Calendar.getInstance().get(Calendar.MONTH));
 
         mcm.automaticallyAddNewMonth(targetMonth, Integer.toString(targetYear));
         /*

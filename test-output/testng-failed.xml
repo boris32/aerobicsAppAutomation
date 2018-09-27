@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [FullTest]">
+  <test thread-count="5" name="Test initial layout(failed)">
+    <classes>
+      <class name="tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect">
+        <methods>
+          <include name="testLayout"/>
+          <include name="wrapUp"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect -->
+    </classes>
+  </test> <!-- Test initial layout(failed) -->
+  <test thread-count="5" name="Test Add Month Layout(failed)">
+    <classes>
+      <class name="tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect">
+        <methods>
+          <include name="wrapUp"/>
+          <include name="verifyAddMonthDialogLayout"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect -->
+    </classes>
+  </test> <!-- Test Add Month Layout(failed) -->
+  <test thread-count="5" name="Test Months List(failed)">
+    <classes>
+      <class name="tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect">
+        <methods>
+          <include name="wrapUp"/>
+          <include name="verifyThatMonthsListIsCorrect"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect -->
+    </classes>
+  </test> <!-- Test Months List(failed) -->
+  <test thread-count="5" name="Test Years List(failed)">
+    <classes>
+      <class name="tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect">
+        <methods>
+          <include name="wrapUp"/>
+          <include name="checkYearsList"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect -->
+    </classes>
+  </test> <!-- Test Years List(failed) -->
+  <test thread-count="5" name="Test Single Month Addition(failed)">
+    <classes>
+      <class name="tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly">
+        <methods>
+          <include name="wrapUp"/>
+          <include name="AddNewMonth"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly -->
+    </classes>
+  </test> <!-- Test Single Month Addition(failed) -->
+  <test thread-count="5" name="Test Multiple Months Addition(failed)">
+    <classes>
+      <class name="tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly">
+        <methods>
+          <include name="runMultipleMonthsAdditionTest"/>
+          <include name="wrapUp"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly -->
+    </classes>
+  </test> <!-- Test Multiple Months Addition(failed) -->
   <test thread-count="5" name="Cannot create duplicate months(failed)">
     <classes>
       <class name="tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths">
@@ -9,7 +75,18 @@
           <include name="TryToCreateDuplicateMonths"/>
           <include name="setupTest"/>
         </methods>
-      </class> <!-- tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonthsmCreatingMultipleMonths -->
+      </class> <!-- tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths -->
     </classes>
   </test> <!-- Cannot create duplicate months(failed) -->
+  <test thread-count="5" name="Add Customer Dialog Layout(failed)">
+    <classes>
+      <class name="tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect">
+        <methods>
+          <include name="testAddNewCustomerLayout"/>
+          <include name="wrapUp"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect -->
+    </classes>
+  </test> <!-- Add Customer Dialog Layout(failed) -->
 </suite> <!-- Failed suite [FullTest] -->

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FullTest" duration-ms="43853" started-at="2018-09-24T20:49:27Z" finished-at="2018-09-24T20:50:11Z">
+  <suite name="FullTest" duration-ms="44494" started-at="2018-09-27T15:13:45Z" finished-at="2018-09-27T15:14:29Z">
     <groups>
     </groups>
-    <test name="Add Customer Dialog Layout" duration-ms="43853" started-at="2018-09-24T20:49:27Z" finished-at="2018-09-24T20:50:11Z">
-      <class name="tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect@7ca48474]" name="setupTest" is-config="true" duration-ms="37139" started-at="2018-09-24T20:49:27Z" finished-at="2018-09-24T20:50:04Z">
+    <test name="verify customer creation dialog layout" duration-ms="44494" started-at="2018-09-27T15:13:45Z" finished-at="2018-09-27T15:14:29Z">
+      <class name="tests.T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect@337d0578]" name="setupTest" is-config="true" duration-ms="36242" started-at="2018-09-27T15:13:45Z" finished-at="2018-09-27T15:14:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="testAddNewCustomerLayout()[pri:0, instance:tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect@7ca48474]" name="testAddNewCustomerLayout" duration-ms="1678" started-at="2018-09-24T20:50:04Z" finished-at="2018-09-24T20:50:06Z">
+        <test-method status="PASS" signature="verifyThatLayoutOfCustomerCreationDialogIsCorrect()[pri:0, instance:tests.T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect@337d0578]" name="verifyThatLayoutOfCustomerCreationDialogIsCorrect" duration-ms="2934" started-at="2018-09-27T15:14:21Z" finished-at="2018-09-27T15:14:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddNewCustomerLayout -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect@7ca48474]" name="wrapUp" is-config="true" duration-ms="5022" started-at="2018-09-24T20:50:06Z" finished-at="2018-09-24T20:50:11Z">
+        </test-method> <!-- verifyThatLayoutOfCustomerCreationDialogIsCorrect -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:tests.T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect@337d0578]" name="wrapUp" is-config="true" duration-ms="5301" started-at="2018-09-27T15:14:24Z" finished-at="2018-09-27T15:14:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-      </class> <!-- tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect -->
-    </test> <!-- Add Customer Dialog Layout -->
+      </class> <!-- tests.T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect -->
+    </test> <!-- verify customer creation dialog layout -->
   </suite> <!-- FullTest -->
 </testng-results>

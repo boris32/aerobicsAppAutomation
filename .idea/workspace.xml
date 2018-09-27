@@ -2,20 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9172e454-efa6-41d0-816c-e7374c5ec3ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/AddNewCustomerDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/tests/T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/CustomerCreationForm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/tests/T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/infrastructure/MonthsCustomersManagementScreen.java" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/MonthsCustomersManagementScreen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testng.xml" afterPath="$PROJECT_DIR$/src/testng.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Add Customer Dialog Layout.html" afterPath="$PROJECT_DIR$/test-output/FullTest/Add Customer Dialog Layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Add Customer Dialog Layout.xml" afterPath="$PROJECT_DIR$/test-output/FullTest/Add Customer Dialog Layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Cannot create duplicate months.html" afterPath="$PROJECT_DIR$/test-output/FullTest/Cannot create duplicate months.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Cannot create duplicate months.xml" afterPath="$PROJECT_DIR$/test-output/FullTest/Cannot create duplicate months.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test Add Month Layout.html" afterPath="$PROJECT_DIR$/test-output/FullTest/Test Add Month Layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test Add Month Layout.xml" afterPath="$PROJECT_DIR$/test-output/FullTest/Test Add Month Layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test Months List.html" afterPath="$PROJECT_DIR$/test-output/FullTest/Test Months List.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test Months List.xml" afterPath="$PROJECT_DIR$/test-output/FullTest/Test Months List.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test Multiple Months Addition.html" afterPath="$PROJECT_DIR$/test-output/FullTest/Test Multiple Months Addition.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test Multiple Months Addition.xml" afterPath="$PROJECT_DIR$/test-output/FullTest/Test Multiple Months Addition.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test Single Month Addition.html" afterPath="$PROJECT_DIR$/test-output/FullTest/Test Single Month Addition.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test Single Month Addition.xml" afterPath="$PROJECT_DIR$/test-output/FullTest/Test Single Month Addition.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test Years List.html" afterPath="$PROJECT_DIR$/test-output/FullTest/Test Years List.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test Years List.xml" afterPath="$PROJECT_DIR$/test-output/FullTest/Test Years List.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test initial layout.html" afterPath="$PROJECT_DIR$/test-output/FullTest/Test initial layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/Test initial layout.xml" afterPath="$PROJECT_DIR$/test-output/FullTest/Test initial layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/FullTest/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/FullTest/testng-failed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/emailable-report.html" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/index.html" afterPath="$PROJECT_DIR$/test-output/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/Add Customer Dialog Layout.properties" afterPath="$PROJECT_DIR$/test-output/old/FullTest/Add Customer Dialog Layout.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/Cannot create duplicate months.properties" afterPath="$PROJECT_DIR$/test-output/old/FullTest/Cannot create duplicate months.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/Test Add Month Layout.properties" afterPath="$PROJECT_DIR$/test-output/old/FullTest/Test Add Month Layout.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/Test Months List.properties" afterPath="$PROJECT_DIR$/test-output/old/FullTest/Test Months List.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/Test Multiple Months Addition.properties" afterPath="$PROJECT_DIR$/test-output/old/FullTest/Test Multiple Months Addition.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/Test Single Month Addition.properties" afterPath="$PROJECT_DIR$/test-output/old/FullTest/Test Single Month Addition.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/Test Years List.properties" afterPath="$PROJECT_DIR$/test-output/old/FullTest/Test Years List.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/Test initial layout.properties" afterPath="$PROJECT_DIR$/test-output/old/FullTest/Test initial layout.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/classes.html" afterPath="$PROJECT_DIR$/test-output/old/FullTest/classes.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/methods-alphabetical.html" afterPath="$PROJECT_DIR$/test-output/old/FullTest/methods-alphabetical.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/methods.html" afterPath="$PROJECT_DIR$/test-output/old/FullTest/methods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/reporter-output.html" afterPath="$PROJECT_DIR$/test-output/old/FullTest/reporter-output.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/testng.xml.html" afterPath="$PROJECT_DIR$/test-output/old/FullTest/testng.xml.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/FullTest/toc.html" afterPath="$PROJECT_DIR$/test-output/old/FullTest/toc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/index.html" afterPath="$PROJECT_DIR$/test-output/old/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/testng-results.xml" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,33 +70,65 @@
       <file leaf-file-name="MonthsCustomersManagementScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/MonthsCustomersManagementScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="1513">
               <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/testng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tests/T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="71" lean-forward="true" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+            <state relative-caret-position="289">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerCreationForm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/CustomerCreationForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="75" column="26" lean-forward="false" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tests/T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="102" lean-forward="false" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tests/T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,11 +136,9 @@
       <file leaf-file-name="T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tests/T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
+            <state relative-caret-position="646">
               <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,21 +146,9 @@
       <file leaf-file-name="AddNewCustomerDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/AddNewCustomerDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
+            <state relative-caret-position="544">
               <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,8 +198,10 @@
         <option value="$PROJECT_DIR$/src/main/java/tests/T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect.java" />
         <option value="$PROJECT_DIR$/src/main/java/infrastructure/AddNewCustomerDialog.java" />
         <option value="$PROJECT_DIR$/src/main/java/infrastructure/MonthsCustomersManagementScreen.java" />
-        <option value="$PROJECT_DIR$/src/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/tests/T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/infrastructure/CustomerCreationForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect.java" />
+        <option value="$PROJECT_DIR$/src/testng.xml" />
       </list>
     </option>
   </component>
@@ -206,6 +257,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,7 +358,6 @@
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,18 +621,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__Java_Projects_aerobics_app_test_automation_src_testng_xml - 2018.09.24 at 21h 35m 45s.xml">
-      <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__Java_Projects_aerobics_app_test_automation_src_testng_xml - 2018.09.24 at 21h 39m 26s.xml">
-      <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__Java_Projects_aerobics_app_test_automation_src_testng_xml - 2018.09.24 at 21h 41m 07s.xml">
-      <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__Java_Projects_aerobics_app_test_automation_src_testng_xml - 2018.09.24 at 21h 42m 09s.xml">
-      <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="D__Java_Projects_aerobics_app_test_automation_src_testng_xml - 2018.09.24 at 21h 43m 26s.xml">
       <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -598,6 +637,18 @@
       <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="D__Java_Projects_aerobics_app_test_automation_src_testng_xml - 2018.09.24 at 22h 50m 12s.xml">
+      <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__Java_Projects_aerobics_app_test_automation_src_testng_xml - 2018.09.24 at 22h 57m 08s.xml">
+      <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__Java_Projects_aerobics_app_test_automation_src_testng_xml - 2018.09.25 at 20h 30m 09s.xml">
+      <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__Java_Projects_aerobics_app_test_automation_src_testng_xml - 2018.09.25 at 20h 36m 35s.xml">
+      <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__Java_Projects_aerobics_app_test_automation_src_testng_xml - 2018.09.27 at 17h 14m 30s.xml">
       <configuration name="D:/Java/Projects/aerobics_app_test_automation/src/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -624,13 +675,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3363029" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3363029" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2185501" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2228145" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -642,6 +692,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -851,22 +902,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -887,9 +922,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -945,9 +978,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="57" column="32" lean-forward="true" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,6 +1231,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/CannotCreateDuplicateMonthsDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="26" column="150" lean-forward="false" selection-start-line="26" selection-start-column="150" selection-end-line="26" selection-end-column="150" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/AddNewCustomerDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/MonthsCustomersManagementScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/CustomerCreationForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="75" column="26" lean-forward="false" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1208,40 +1293,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/CannotCreateDuplicateMonthsDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="26" column="150" lean-forward="false" selection-start-line="26" selection-start-column="150" selection-end-line="26" selection-end-column="150" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/AddNewCustomerDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/MonthsCustomersManagementScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="22" column="102" lean-forward="false" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1250,29 +1305,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state relative-caret-position="459">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="71" lean-forward="true" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

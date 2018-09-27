@@ -124,7 +124,7 @@ public class AddMonthDialog extends BasePage {
     }
 
     //Select specific month
-    public void selectMonth(String month) {
+    public AddMonthDialog selectMonth(String month) {
         expandMonthSpinner();
         List<MobileElement> months = getMonthsListInSpinnerAsListOfMobileElements();
         for (MobileElement el : months) {
@@ -133,10 +133,12 @@ public class AddMonthDialog extends BasePage {
                 break;
             }
         }
+
+        return this;
     }
 
     //Select specific year
-    public void selectYear(String year) {
+    public AddMonthDialog selectYear(String year) {
         expandYearSpinner();
         List<MobileElement> years = getYearsListInSpinnerAsListOfMobileElements();
         for (MobileElement el : years) {
@@ -147,6 +149,8 @@ public class AddMonthDialog extends BasePage {
                 break;
             }
         }
+
+        return this;
     }
 
 

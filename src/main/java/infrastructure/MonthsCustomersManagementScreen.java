@@ -53,8 +53,9 @@ public class MonthsCustomersManagementScreen extends BasePage {
         }
 
         //MONTH RELATED METHODS:
-        public void pressAddNewMonthButton () {
+        public AddMonthDialog pressAddNewMonthButton () {
             addNewMonth.click();
+            return new AddMonthDialog(driver);
         }
 
         public WebElement getTheExistingMonthsList() {
@@ -95,13 +96,35 @@ public class MonthsCustomersManagementScreen extends BasePage {
 
             amd.clickOkButton();
 
+            //return this;
+        }
+
+        //Starts from main screen, creates a new month then returns user to the main screen again
+        public MonthsCustomersManagementScreen createNewMonthFromScratch (String desiredMonth, String desiredYear) {
+            pressAddNewMonthButton()
+                    .selectMonth(desiredMonth)
+                    .selectYear(desiredYear)
+                    .clickOkButton();
+            return this;
         }
 
 
         //CUSTOMER RELATED METHODS
-        public void pressAddNewCustomerButton () {
-            addNewCustomer.click();
+
+        //Starts from main screen, creates a new customer then returns user to the main screen again
+        public MonthsCustomersManagementScreen createNewCustomerFromScratch(String fName, String lName, String fee) {
+            pressAddNewCustomerButton()
+                    .clickAddNewCustomer()
+                    .createNewCustomer(fName, lName, fee);
+            return this;
         }
+
+        public AddNewCustomerDialog pressAddNewCustomerButton () {
+            addNewCustomer.click();
+            return new AddNewCustomerDialog(driver);
+        }
+
+
 
 
 

@@ -39,8 +39,9 @@ public class AddNewCustomerDialog extends BasePage {
         addSelectedCustomer.click();
     }
 
-    public void clickAddNewCustomer() {
+    public CustomerCreationForm clickAddNewCustomer() {
         addNewCustomer.click();
+        return new CustomerCreationForm(driver);
     }
 
 }

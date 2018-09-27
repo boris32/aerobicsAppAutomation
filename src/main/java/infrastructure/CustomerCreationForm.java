@@ -69,6 +69,29 @@ public class CustomerCreationForm extends BasePage {
         return this;
     }
 
+    //CREATE NEW CUSTOMER
+    public void createNewCustomer (String fName, String lName, String fee) {
+        firstNameField.sendKeys(fName);
+        lastNameField.sendKeys(lName);
+        usualFeeField.sendKeys(fee);
+        clickCreateButton();
+    }
+
+    public CustomerCreationForm clearFnameField() {
+        firstNameField.clear();
+        return this;
+    }
+
+    public CustomerCreationForm clearLnameField() {
+        lastNameField.clear();
+        return this;
+    }
+
+    public CustomerCreationForm clearFeeField() {
+        usualFeeField.clear();
+        return this;
+    }
+
     //LAYOUT
     public boolean verifyCustomerCreationFormDefaultLayout () {
         boolean result = false;
@@ -86,8 +109,11 @@ public class CustomerCreationForm extends BasePage {
             result = true;
 
         return result;
-
     }
 
+    //Is the CREATE button enabled?
+    public boolean isCreateButtonEnabled () {
+        return createButton.isEnabled();
+    }
 
 }

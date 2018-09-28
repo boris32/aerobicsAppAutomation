@@ -17,6 +17,7 @@ public class T2_3VerifyFieldTextValidationOnCustomerCreationDialog extends BaseT
 
     @Test
     public void verifyFieldValidation() {
+        Reporter.log("<b>Now testing: T2_3VerifyFieldTextValidationOnCustomerCreationDialog<b>");
         SoftAssert sAssert = new SoftAssert();
 
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
@@ -27,28 +28,43 @@ public class T2_3VerifyFieldTextValidationOnCustomerCreationDialog extends BaseT
 
         //Enter first name only
         ccf.enterCustomerFirstName("fname");
-        Reporter.log("When only the first name is populated, create button enabled value is: " + ccf.isCreateButtonEnabled());
+        if (ccf.isCreateButtonEnabled())
+            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Create button is disabled when only FNAME is populated.");
+        else
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Create button is enabled when only FNAME is populated!");
         sAssert.assertFalse(ccf.isCreateButtonEnabled());
 
         //Now enter last name as well
         ccf.enterCustomerLastName("lname");
-        Reporter.log("When first and last name is populated, create button enabled value is: " + ccf.isCreateButtonEnabled());
+        if (ccf.isCreateButtonEnabled())
+            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Create button is disabled when only FNAME and LNAME are populated.");
+        else
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Create button is enabled when only FNAME and LNAME are populated!");
         sAssert.assertFalse(ccf.isCreateButtonEnabled());
 
         //Now enter fee as well, you have all three populated - button is now enabled
         ccf.enterCustomerUsualFee("123");
-        Reporter.log("When all three fields are populated, create button enabled value is: " + ccf.isCreateButtonEnabled());
+        if (ccf.isCreateButtonEnabled())
+            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Create button is enabled when all three fields are populated.");
+        else
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Create button is disabled when all three fields are populated!");
         sAssert.assertTrue(ccf.isCreateButtonEnabled());
 
         //Clear first name:
         ccf.clearFnameField();
-        Reporter.log("When only last name and fee are populated, create button enabled value is: " + ccf.isCreateButtonEnabled());
+        if (ccf.isCreateButtonEnabled())
+            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Create button is disabled when FNAME is missing.");
+        else
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Create button is enabled when FNAME is missing!");
         sAssert.assertFalse(ccf.isCreateButtonEnabled());
 
         //Now check last name:
         ccf.enterCustomerFirstName("fname repopulated");
         ccf.clearLnameField();
-        Reporter.log("When only first name and fee are populated, create button enabled value is: " + ccf.isCreateButtonEnabled());
+        if (ccf.isCreateButtonEnabled())
+            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Create button is disabled when LNAME is missing.");
+        else
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Create button is enabled when LNAME is missing!");
         sAssert.assertFalse(ccf.isCreateButtonEnabled());
 
 

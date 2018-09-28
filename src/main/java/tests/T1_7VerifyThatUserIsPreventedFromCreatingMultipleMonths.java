@@ -16,6 +16,7 @@ public class T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths extends Bas
 
     @Test
     public void TryToCreateDuplicateMonths() {
+        Reporter.log("<b>Now testing: T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths<b>");
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
         //Create a month instance
@@ -41,6 +42,11 @@ public class T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths extends Bas
         String desiredMessageText = "The month - year combination that you have selected is already in use. Please check the Months list at the left-hand side of main app screen.";
         Reporter.log("Dialog message reads as follows: " + ccdmd.getTextFromCannotCreateDuplicateMonthPopup());
         String actualMessageText = ccdmd.getTextFromCannotCreateDuplicateMonthPopup();
+
+        if (ccdmd.isDuplicateMonthsWarningDisplayed() && desiredTitleText.equals(actualTitleText) && desiredMessageText.equals(actualMessageText))
+            Reporter.log("<b><font color=\"green\">PASSED: </font></b>User prevented from adding duplicate months.");
+        else
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>User NOT prevented from adding duplicate months!");
 
         Assert.assertTrue(ccdmd.isDuplicateMonthsWarningDisplayed() && desiredTitleText.equals(actualTitleText) && desiredMessageText.equals(actualMessageText));
     }

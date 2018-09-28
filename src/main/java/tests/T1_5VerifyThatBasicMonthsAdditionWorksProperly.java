@@ -17,7 +17,7 @@ public class T1_5VerifyThatBasicMonthsAdditionWorksProperly extends BaseTest {
 
     @Test
     public void AddNewMonth() {
-        Reporter.log("<b>Now testing: New Month Addition<b>");
+        Reporter.log("<b>Now testing: T1_5VerifyThatBasicMonthsAdditionWorksProperly<b>");
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
 
@@ -50,6 +50,11 @@ public class T1_5VerifyThatBasicMonthsAdditionWorksProperly extends BaseTest {
 
         Reporter.log(String.format("Target month/ year to look for: %s, %s",  targetMonth, targetYear));
         Reporter.log("Month list item at index 0 returned: " + monthList.get(0).getText().toString());
+
+        if (monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear ))
+            Reporter.log("<b><font color=\"green\">PASSED: </font></b>Basic month addition works.");
+        else
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Basic month addition doesn't work!");
 
         Assert.assertTrue((monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear )));
 

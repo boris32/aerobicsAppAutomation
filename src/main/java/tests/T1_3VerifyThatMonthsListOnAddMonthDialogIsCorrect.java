@@ -19,7 +19,7 @@ public class T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect extends BaseTest 
 
     @Test
     public void verifyThatMonthsListIsCorrect() {
-        Reporter.log("<b>Now testing: Months list content on the add month dialog<b>");
+        Reporter.log("<b>Now testing: T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect<b>");
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
         mcm.pressAddNewMonthButton();
         AddMonthDialog amd = new AddMonthDialog(driver);
@@ -30,7 +30,7 @@ public class T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect extends BaseTest 
         if (expectedList.containsAll(actualList) && (expectedList.size() == actualList.size()))
             Reporter.log("<b><font color=\"green\">PASSED: </font></b> Months list on the 'Add Month Dialog' contains the correct elements: " + actualList);
         else
-            Reporter.log("<b><font color=\"ref\">FAILED: </font></b>Months list on the 'Add Month Dialog' in incorrect: " + actualList);
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Months list on the 'Add Month Dialog' in incorrect: " + actualList);
         Assert.assertTrue(expectedList.containsAll(actualList) && (expectedList.size() == actualList.size()));
     }
 }

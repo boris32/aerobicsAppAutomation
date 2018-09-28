@@ -18,12 +18,12 @@ public class T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect exten
 
     @Test
     public void testLayout () {
-        Reporter.log("<b>Now testing: Management screen layout<b>");
+        Reporter.log("<b>Now testing: T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect<b>");
         MonthsCustomersManagementScreen managementPage = new MonthsCustomersManagementScreen(super.driver);
         if (managementPage.isBasicLayoutCorrect())
             Reporter.log("<b><font color=\"green\">PASSED: </font></b>The layout of Management screen is correct. All the main controls are present.");
         else
-            Reporter.log("<b><font color=\"ref\">FAILED: </font></b>The layout of Management screen is IN-correct! Certain controls are missing!");
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>The layout of Management screen is IN-correct! Certain controls are missing!");
         Assert.assertTrue(managementPage.isBasicLayoutCorrect());
     }
 }

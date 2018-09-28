@@ -20,7 +20,7 @@ public class T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect extends BaseTest{
 
     @Test
     public void checkYearsList() {
-        Reporter.log("<b>Now testing: Years list content on the add month dialog<b>");
+        Reporter.log("<b>Now testing: T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect<b>");
 
         DataHandler dh = new DataHandler();
         try {
@@ -45,7 +45,7 @@ public class T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect extends BaseTest{
         if ((strYearsExpected.containsAll(strYearsActual)) && (strYearsExpected.size() == strYearsActual.size()))
             Reporter.log("<b><font color=\"green\">PASSED: </font></b>Months list on the 'Add Month Dialog' contains the correct elements: " + strYearsActual);
         else
-            Reporter.log("<b><font color=\"ref\">FAILED: </font></b>Months list on the 'Add Month Dialog' in incorrect: " + strYearsActual);
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Months list on the 'Add Month Dialog' in incorrect: " + strYearsActual);
 
         Assert.assertTrue((strYearsExpected.containsAll(strYearsActual)) && (strYearsExpected.size() == strYearsActual.size()));
     }

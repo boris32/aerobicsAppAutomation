@@ -18,7 +18,7 @@ public class T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly extends BaseTe
 
     @Test
     public void runMultipleMonthsAdditionTest() {
-        Reporter.log("<b>Now testing: Multiple Month Addition<b>");
+        Reporter.log("<b>Now testing: T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly<b>");
         SoftAssert softAssert = new SoftAssert();
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
@@ -28,6 +28,11 @@ public class T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly extends BaseTe
         List<MobileElement> monthList = mcm.getExistingMonthAsListOfItems();
         Reporter.log(String.format("First target month/ year to look for: %s, %s",  targetMonth, targetYear));
         Reporter.log(String.format("Received month and year: %s", monthList.get(0).getText() ));
+        if (monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear ))
+            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>First month addition works.");
+        else
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Month addition failed!");
+
         softAssert.assertTrue(monthList.get(0).getText().contains(targetMonth + " " + targetYear ));
 
         targetMonth = "Dec";
@@ -36,6 +41,10 @@ public class T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly extends BaseTe
         monthList = mcm.getExistingMonthAsListOfItems();
         Reporter.log(String.format("Second target month/ year to look for: %s, %s",  targetMonth, targetYear));
         Reporter.log(String.format("Received month and year: %s", monthList.get(0).getText() ));
+        if (monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear ))
+            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Second month addition works.");
+        else
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Month addition failed!");
         softAssert.assertTrue(monthList.get(0).getText().contains(targetMonth + " " + targetYear));
 
         targetMonth = "Sep";
@@ -44,6 +53,10 @@ public class T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly extends BaseTe
         monthList = mcm.getExistingMonthAsListOfItems();
         Reporter.log(String.format("Third target month/ year to look for: %s, %s",  targetMonth, targetYear));
         Reporter.log(String.format("Received month and year: %s", monthList.get(0).getText() ));
+        if (monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear ))
+            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Third month addition works.");
+        else
+            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Month addition failed!");
         softAssert.assertTrue(monthList.get(0).getText().contains(targetMonth + " " + targetYear));
 
         softAssert.assertAll();

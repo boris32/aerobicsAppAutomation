@@ -1,8 +1,6 @@
 package tests;
 
-import infrastructure.AddNewCustomerDialog;
-import infrastructure.BaseTest;
-import infrastructure.MonthsCustomersManagementScreen;
+import infrastructure.*;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -14,6 +12,7 @@ public class T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect extends BaseTest {
 
     @Test
     public void testAddNewCustomerLayout () {
+        priority = TestCasePriority.P3;
         Reporter.log("<b>Now testing: T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect<b>");
 
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
@@ -29,19 +28,13 @@ public class T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect extends BaseTest {
         Reporter.log("Is the add new customer button displayed? : " + ancd.getAddNewCustomer().isDisplayed());
         Reporter.log("Is the add new customer button enabled? : " + ancd.getAddNewCustomer().isEnabled());
 
-        if (ancd.getTextFromAddCustomerDialog().equals("Select existing or add brand new customer: ")
+        ReportingUtilities.assertTrueWithMessage(priority,
+                (ancd.getTextFromAddCustomerDialog().equals("Select existing or add brand new customer: ")
                 && ancd.getAddSelectedCustomer().isDisplayed()
                 && ancd.getAddSelectedCustomer().isEnabled()==false
                 && ancd.getAddNewCustomer().isDisplayed()
-                && ancd.getAddNewCustomer().isEnabled() == true)
-            Reporter.log("<b><font color=\"green\">PASSED: </font></b>Layout of 'Add New Customer' dialog is correct.");
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></bLayout of 'Add New Customer' dialog is NOT correct!");
-
-        Assert.assertTrue(ancd.getTextFromAddCustomerDialog().equals("Select existing or add brand new customer: ")
-                && ancd.getAddSelectedCustomer().isDisplayed()
-                && ancd.getAddSelectedCustomer().isEnabled()==false
-                && ancd.getAddNewCustomer().isDisplayed()
-                && ancd.getAddNewCustomer().isEnabled() == true);
+                && ancd.getAddNewCustomer().isEnabled() == true),
+                "Layout of 'Add New Customer' dialog is correct.",
+                "Layout of 'Add New Customer' dialog is NOT correct!");
     }
 }

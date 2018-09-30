@@ -1,8 +1,6 @@
 package tests;
 
-import infrastructure.AddMonthDialog;
-import infrastructure.BaseTest;
-import infrastructure.MonthsCustomersManagementScreen;
+import infrastructure.*;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -19,6 +17,7 @@ public class T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect extends BaseTest 
 
     @Test
     public void verifyThatMonthsListIsCorrect() {
+        priority = TestCasePriority.P2;
         Reporter.log("<b>Now testing: T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect<b>");
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
         mcm.pressAddNewMonthButton();
@@ -27,10 +26,7 @@ public class T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect extends BaseTest 
         List<String> actualList = amd.getMonthsListInSpinnerAsListOfStrings();
         List<String> expectedList = new ArrayList<String>();
         Collections.addAll(expectedList, "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec".split(","));
-        if (expectedList.containsAll(actualList) && (expectedList.size() == actualList.size()))
-            Reporter.log("<b><font color=\"green\">PASSED: </font></b> Months list on the 'Add Month Dialog' contains the correct elements: " + actualList);
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Months list on the 'Add Month Dialog' in incorrect: " + actualList);
-        Assert.assertTrue(expectedList.containsAll(actualList) && (expectedList.size() == actualList.size()));
+
+        ReportingUtilities.assertTrueWithMessage(priority, expectedList.containsAll(actualList) && (expectedList.size() == actualList.size()), " Months list on the 'Add Month Dialog' contains the correct elements: " + actualList, "Months list on the 'Add Month Dialog' in incorrect: " + actualList);
     }
 }

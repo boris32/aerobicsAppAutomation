@@ -1,9 +1,6 @@
 package tests;
 
-import infrastructure.AddNewCustomerDialog;
-import infrastructure.BaseTest;
-import infrastructure.CustomerCreationForm;
-import infrastructure.MonthsCustomersManagementScreen;
+import infrastructure.*;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -17,6 +14,7 @@ public class T2_3VerifyFieldTextValidationOnCustomerCreationDialog extends BaseT
 
     @Test
     public void verifyFieldValidation() {
+        priority = TestCasePriority.P4;
         Reporter.log("<b>Now testing: T2_3VerifyFieldTextValidationOnCustomerCreationDialog<b>");
         SoftAssert sAssert = new SoftAssert();
 
@@ -28,44 +26,25 @@ public class T2_3VerifyFieldTextValidationOnCustomerCreationDialog extends BaseT
 
         //Enter first name only
         ccf.enterCustomerFirstName("fname");
-        if (ccf.isCreateButtonEnabled())
-            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Create button is disabled when only FNAME is populated.");
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Create button is enabled when only FNAME is populated!");
-        sAssert.assertFalse(ccf.isCreateButtonEnabled());
+        ReportingUtilities.softAssertFalseWithMessage(sAssert, priority, ccf.isCreateButtonEnabled(), "Create button is disabled when only FNAME is populated.", "Create button is enabled when only FNAME is populated!");
 
         //Now enter last name as well
         ccf.enterCustomerLastName("lname");
-        if (ccf.isCreateButtonEnabled())
-            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Create button is disabled when only FNAME and LNAME are populated.");
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Create button is enabled when only FNAME and LNAME are populated!");
-        sAssert.assertFalse(ccf.isCreateButtonEnabled());
+        ReportingUtilities.softAssertFalseWithMessage(sAssert, priority, ccf.isCreateButtonEnabled(), "Create button is disabled when only FNAME and LNAME are populated.", "Create button is enabled when only FNAME and LNAME are populated!");
 
         //Now enter fee as well, you have all three populated - button is now enabled
         ccf.enterCustomerUsualFee("123");
-        if (ccf.isCreateButtonEnabled())
-            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Create button is enabled when all three fields are populated.");
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Create button is disabled when all three fields are populated!");
-        sAssert.assertTrue(ccf.isCreateButtonEnabled());
+        ReportingUtilities.softAssertTrueWithMessage(sAssert, priority, ccf.isCreateButtonEnabled(), "Create button is enabled when all three fields are populated.", "Create button is disabled when all three fields are populated!");
 
         //Clear first name:
         ccf.clearFnameField();
-        if (ccf.isCreateButtonEnabled())
-            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Create button is disabled when FNAME is missing.");
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Create button is enabled when FNAME is missing!");
-        sAssert.assertFalse(ccf.isCreateButtonEnabled());
+        ReportingUtilities.softAssertFalseWithMessage(sAssert, priority, ccf.isCreateButtonEnabled(), "Create button is disabled when FNAME is missing.", "Create button is enabled when FNAME is missing!");
 
         //Now check last name:
         ccf.enterCustomerFirstName("fname repopulated");
         ccf.clearLnameField();
-        if (ccf.isCreateButtonEnabled())
-            Reporter.log("<b><font color=\"yellow\">SOFT PASS: </font></b>Create button is disabled when LNAME is missing.");
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Create button is enabled when LNAME is missing!");
-        sAssert.assertFalse(ccf.isCreateButtonEnabled());
+        ReportingUtilities.softAssertFalseWithMessage(sAssert, priority, ccf.isCreateButtonEnabled(), "Create button is disabled when LNAME is missing.", "Create button is enabled when LNAME is missing!");
+
 
 
         sAssert.assertAll();

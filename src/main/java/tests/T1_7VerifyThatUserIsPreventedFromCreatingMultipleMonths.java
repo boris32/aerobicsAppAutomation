@@ -16,6 +16,7 @@ public class T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths extends Bas
 
     @Test
     public void TryToCreateDuplicateMonths() {
+        priority = TestCasePriority.P2;
         Reporter.log("<b>Now testing: T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths<b>");
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
@@ -43,11 +44,7 @@ public class T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths extends Bas
         Reporter.log("Dialog message reads as follows: " + ccdmd.getTextFromCannotCreateDuplicateMonthPopup());
         String actualMessageText = ccdmd.getTextFromCannotCreateDuplicateMonthPopup();
 
-        if (ccdmd.isDuplicateMonthsWarningDisplayed() && desiredTitleText.equals(actualTitleText) && desiredMessageText.equals(actualMessageText))
-            Reporter.log("<b><font color=\"green\">PASSED: </font></b>User prevented from adding duplicate months.");
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>User NOT prevented from adding duplicate months!");
+        ReportingUtilities.assertTrueWithMessage(priority, ccdmd.isDuplicateMonthsWarningDisplayed() && desiredTitleText.equals(actualTitleText) && desiredMessageText.equals(actualMessageText), "User prevented from adding duplicate months.", "User NOT prevented from adding duplicate months!");
 
-        Assert.assertTrue(ccdmd.isDuplicateMonthsWarningDisplayed() && desiredTitleText.equals(actualTitleText) && desiredMessageText.equals(actualMessageText));
     }
 }

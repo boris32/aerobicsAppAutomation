@@ -1,12 +1,11 @@
 package tests;
 
-import infrastructure.BaseTest;
-import infrastructure.MonthsCustomersManagementScreen;
+import infrastructure.*;
 import io.appium.java_client.MobileElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-import infrastructure.myAppUtil;
+
 import java.util.Calendar;
 import java.util.List;
 
@@ -17,6 +16,7 @@ public class T1_5VerifyThatBasicMonthsAdditionWorksProperly extends BaseTest {
 
     @Test
     public void AddNewMonth() {
+        priority = TestCasePriority.P0;
         Reporter.log("<b>Now testing: T1_5VerifyThatBasicMonthsAdditionWorksProperly<b>");
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
@@ -24,39 +24,14 @@ public class T1_5VerifyThatBasicMonthsAdditionWorksProperly extends BaseTest {
 
         int targetYear = Calendar.getInstance().get(Calendar.YEAR) + 1;
         String targetMonth = myAppUtil.getMonthAbbrev(Calendar.getInstance().get(Calendar.MONTH));
-
         mcm.automaticallyAddNewMonth(targetMonth, Integer.toString(targetYear));
-        /*
-        //TODO: Refactor this, fixed quick and dirty
-        try {
-            for (MobileElement el : years) {
-                if (Integer.parseInt(el.getText()) == targetYear) {
-                    el.click();
-                    break;
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        amd.clickOkButton();*/
 
-        /*WebElement monthList = mcm.getTheExistingMonthsList();
-        if (monthList!=null)
-            Reporter.log(String.format("Month List received, containing %d items", 323134234));
-        else
-            Reporter.log("Month List extraction failed!");*/
 
         List<MobileElement> monthList = mcm.getExistingMonthAsListOfItems();
 
         Reporter.log(String.format("Target month/ year to look for: %s, %s",  targetMonth, targetYear));
         Reporter.log("Month list item at index 0 returned: " + monthList.get(0).getText().toString());
 
-        if (monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear ))
-            Reporter.log("<b><font color=\"green\">PASSED: </font></b>Basic month addition works.");
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Basic month addition doesn't work!");
-
-        Assert.assertTrue((monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear )));
-
+        ReportingUtilities.assertTrueWithMessage(priority, (monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear )), "Basic month addition works.", "Basic month addition doesn't work!");
     }
 }

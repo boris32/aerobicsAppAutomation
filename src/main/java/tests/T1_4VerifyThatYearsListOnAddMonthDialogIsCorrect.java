@@ -1,9 +1,6 @@
 package tests;
 
-import infrastructure.AddMonthDialog;
-import infrastructure.BaseTest;
-import infrastructure.DataHandler;
-import infrastructure.MonthsCustomersManagementScreen;
+import infrastructure.*;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -20,6 +17,7 @@ public class T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect extends BaseTest{
 
     @Test
     public void checkYearsList() {
+        priority = TestCasePriority.P2;
         Reporter.log("<b>Now testing: T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect<b>");
 
         DataHandler dh = new DataHandler();
@@ -41,12 +39,6 @@ public class T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect extends BaseTest{
         for (int i=0;i<3;i++)
             strYearsExpected.add(Integer.toString(year + i));
 
-
-        if ((strYearsExpected.containsAll(strYearsActual)) && (strYearsExpected.size() == strYearsActual.size()))
-            Reporter.log("<b><font color=\"green\">PASSED: </font></b>Months list on the 'Add Month Dialog' contains the correct elements: " + strYearsActual);
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Months list on the 'Add Month Dialog' in incorrect: " + strYearsActual);
-
-        Assert.assertTrue((strYearsExpected.containsAll(strYearsActual)) && (strYearsExpected.size() == strYearsActual.size()));
+        ReportingUtilities.assertTrueWithMessage(priority, (strYearsExpected.containsAll(strYearsActual)) && (strYearsExpected.size() == strYearsActual.size()), "Months list on the 'Add Month Dialog' contains the correct elements: " + strYearsActual, ">Months list on the 'Add Month Dialog' in incorrect: " + strYearsActual);
     }
 }

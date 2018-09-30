@@ -1,9 +1,6 @@
 package tests;
 
-import infrastructure.AddNewCustomerDialog;
-import infrastructure.BaseTest;
-import infrastructure.CustomerCreationForm;
-import infrastructure.MonthsCustomersManagementScreen;
+import infrastructure.*;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -16,18 +13,13 @@ public class T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect extends BaseT
 
     @Test
     public void verifyThatLayoutOfCustomerCreationDialogIsCorrect () {
+        priority = TestCasePriority.P3;
         Reporter.log("<b>Now testing: T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect<b>");
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
         mcm.pressAddNewCustomerButton();
         AddNewCustomerDialog ancd = new AddNewCustomerDialog(driver);
         ancd.clickAddNewCustomer();
 
-        CustomerCreationForm ccf = new CustomerCreationForm(driver);
-        if (ccf.verifyCustomerCreationFormDefaultLayout())
-            Reporter.log("<b><font color=\"green\">PASSED: </font></b>Default layout of Customer Creation Dialog is correct.");
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Default layout of Customer Creation Dialog is IN-correct.");
-
-        Assert.assertTrue(ccf.verifyCustomerCreationFormDefaultLayout());
+        ReportingUtilities.assertTrueWithMessage(priority, new CustomerCreationForm(driver).verifyCustomerCreationFormDefaultLayout(), "Default layout of Customer Creation Dialog is correct.", "Default layout of Customer Creation Dialog is IN-correct.");
     }
 }

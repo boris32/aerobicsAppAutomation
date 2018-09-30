@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
 
     protected AppiumDriver<MobileElement> driver;
-
+    protected TestCasePriority priority;
 
     @BeforeTest
     public void setupTest() throws MalformedURLException {
@@ -42,6 +42,15 @@ public class BaseTest {
     public void wrapUp() {
         driver.quit();
     }
+
+    @AfterSuite
+    public void afterSuite() {
+
+        Reporter.log("</table>");
+        ReportingUtilities.geenerateResultsTable();
+
+    }
+
 
 
 

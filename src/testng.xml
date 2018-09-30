@@ -9,63 +9,65 @@
                      <class name="tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect" />
                  </classes>
              </test>
+
+
              <test name="Test Add Month Layout">
                  <classes>
                      <class name="tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect"/>
                  </classes>
              </test>
 
-             <test name="Test Months List">
-                 <classes>
-                     <class name="tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect"/>
-                 </classes>
-             </test>
+                 <test name="Test Months List">
+                     <classes>
+                         <class name="tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect"/>
+                     </classes>
+                 </test>
 
 
-             <test name="Test Years List">
-                 <classes>
-                     <class name="tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect"/>
-                 </classes>
-             </test>
+                 <test name="Test Years List">
+                     <classes>
+                         <class name="tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect"/>
+                     </classes>
+                 </test>
 
-             <test name="Test Single Month Addition">
-                 <classes>
-                     <class name="tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly"/>
-                 </classes>
-             </test>
+                 <test name="Test Single Month Addition">
+                     <classes>
+                         <class name="tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly"/>
+                     </classes>
+                 </test>
 
 
-                <test name="Test Multiple Months Addition">
+                    <test name="Test Multiple Months Addition">
+                        <classes>
+                            <class name="tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly"/>
+                        </classes>
+                    </test>
+
+
+                <test name="Cannot create duplicate months">
                     <classes>
-                        <class name="tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly"/>
+                        <class name="tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths"/>
                     </classes>
                 </test>
 
 
-            <test name="Cannot create duplicate months">
-                <classes>
-                    <class name="tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths"/>
-                </classes>
-            </test>
+                <test name="Add Customer Dialog Layout">
+                    <classes>
+                        <class name="tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect"/>
+                    </classes>
+                </test>
 
 
-            <test name="Add Customer Dialog Layout">
-                <classes>
-                    <class name="tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect"/>
-                </classes>
-            </test>
+        <test name="verify customer creation dialog layout">
+            <classes>
+                <class name="tests.T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect"/>
+            </classes>
+        </test>
 
-
-    <test name="verify customer creation dialog layout">
-        <classes>
-            <class name="tests.T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect"/>
-        </classes>
-    </test>
-
-    <test name="verify customer creation dialog validation">
-        <classes>
-            <class name="tests.T2_3VerifyFieldTextValidationOnCustomerCreationDialog"/>
-        </classes>
-    </test>
+        <test name="verify customer creation dialog validation">
+            <classes>
+                <class name="tests.T2_3VerifyFieldTextValidationOnCustomerCreationDialog"/>
+            </classes>
+        </test>
 
         </suite>

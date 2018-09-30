@@ -35,7 +35,7 @@ public class ReportingUtilities {
 
 
     public static void assertTrueWithMessage(TestCasePriority priority, boolean passOrFail, String messageIfPassed, String messageIfFailed) {
-        startTableIfNeeded();
+        setUpReporting();
         calculatePassRates(priority, passOrFail);
         if (passOrFail)
             Reporter.log("<tr><td>" + priority + "</td><td><b><font color=\"green\">PASSED</font></b></td><td>" + messageIfPassed + "</td></tr>");
@@ -46,7 +46,7 @@ public class ReportingUtilities {
     }
 
     public static void assertFalseWithMessage(TestCasePriority priority, boolean passOrFail, String messageIfPassed, String messageIfFailed) {
-        startTableIfNeeded();
+        setUpReporting();
         calculatePassRates(priority, !passOrFail);
         if (!passOrFail)
             Reporter.log("<tr><td>" + priority + "<td><b><font color=\"red\">FAILED</font></b></td><td>" + messageIfPassed + "</td></tr>");
@@ -58,7 +58,7 @@ public class ReportingUtilities {
 
 
     public static void softAssertTrueWithMessage(SoftAssert sAssert, TestCasePriority priority, boolean passOrFail, String messageIfPassed, String messageIfFailed) {
-        startTableIfNeeded();
+        setUpReporting();
         calculatePassRates(priority, passOrFail);
         if (passOrFail)
             Reporter.log("<tr><td>" + priority + "<td><b><font color=\"orange\">PASSED</font></b></td><td>" + messageIfFailed + "</td></tr>");
@@ -69,7 +69,7 @@ public class ReportingUtilities {
     }
 
     public static void softAssertFalseWithMessage(SoftAssert sAssert, TestCasePriority priority,  boolean passOrFail, String messageIfPassed, String messageIfFailed) {
-        startTableIfNeeded();
+        setUpReporting();
         calculatePassRates(priority, !passOrFail);
         if (!passOrFail)
             Reporter.log("<tr><td>" + priority + "<td><b><font color=\"orange\">PASSED</font></b></td><td>" + messageIfFailed + "</td></tr>");
@@ -88,21 +88,19 @@ public class ReportingUtilities {
         sAssert.assertAll();
     }*/
 
-    private static void startTableIfNeeded() {
+    private static void setUpReporting() {
         if (hasTableBeenCerated == false) {
             Reporter.log("<table border = 1>");
             hasTableBeenCerated = true;
+            passRateMap = new HashMap<TestCasePriority, PassRatesDto<Integer, Integer>>();
+            for (TestCasePriority priority2:TestCasePriority.values())
+                passRateMap.put(priority2, new PassRatesDto<Integer, Integer>(0, 0));
         }
     }
 
     private static void calculatePassRates(TestCasePriority priority, boolean passOrFail) {
 
-        passRateMap = new HashMap<TestCasePriority, PassRatesDto<Integer, Integer>>();
-        //passRateMap.put(TestCasePriority.P0, new PassRatesDto<Integer, Integer>(0, 0));
 
-
-        for (TestCasePriority priority2:TestCasePriority.values())
-            passRateMap.put(priority2, new PassRatesDto<Integer, Integer>(0, 0));
 
 
         switch (priority) {

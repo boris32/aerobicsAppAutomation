@@ -17,7 +17,7 @@ public class T1_5VerifyThatBasicMonthsAdditionWorksProperly extends BaseTest {
     @Test
     public void AddNewMonth() {
         priority = TestCasePriority.P0;
-        Reporter.log("<b>Now testing: T1_5VerifyThatBasicMonthsAdditionWorksProperly<b>");
+        testCaseId = "T1_5";
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
 
@@ -29,9 +29,10 @@ public class T1_5VerifyThatBasicMonthsAdditionWorksProperly extends BaseTest {
 
         List<MobileElement> monthList = mcm.getExistingMonthAsListOfItems();
 
-        Reporter.log(String.format("Target month/ year to look for: %s, %s",  targetMonth, targetYear));
-        Reporter.log("Month list item at index 0 returned: " + monthList.get(0).getText().toString());
 
-        ReportingUtilities.assertTrueWithMessage(priority, (monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear )), "Basic month addition works.", "Basic month addition doesn't work!");
+        logger.info(String.format("Target month/ year to look for: %s, %s",  targetMonth, targetYear));
+        logger.info("Month list item at index 0 returned: " + monthList.get(0).getText().toString());
+
+        ReportingUtilities.assertTrueWithMessage(priority, (monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear )), "Basic month addition works.", "Basic month addition doesn't work!", testCaseId);
     }
 }

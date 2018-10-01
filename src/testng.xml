@@ -3,7 +3,7 @@
     <!--
     -->
 
-
+<!--
              <test name="Test initial layout">
                  <classes>
                      <class name="tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect" />
@@ -63,7 +63,7 @@
                 <class name="tests.T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect"/>
             </classes>
         </test>
-
+-->
         <test name="verify customer creation dialog validation">
             <classes>
                 <class name="tests.T2_3VerifyFieldTextValidationOnCustomerCreationDialog"/>

@@ -21,7 +21,7 @@ public class T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly extends BaseTe
     @Test
     public void runMultipleMonthsAdditionTest() {
         priority = TestCasePriority.P0;
-        Reporter.log("<b>Now testing: T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly<b>");
+        testCaseId = "T1.6-a";
         SoftAssert softAssert = new SoftAssert();
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
@@ -29,31 +29,28 @@ public class T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly extends BaseTe
         String targetYear = Integer.toString(Calendar.getInstance().get(Calendar.YEAR) +2);
         mcm.automaticallyAddNewMonth(targetMonth, targetYear);
         List<MobileElement> monthList = mcm.getExistingMonthAsListOfItems();
-        Reporter.log(String.format("First target month/ year to look for: %s, %s",  targetMonth, targetYear));
-        Reporter.log(String.format("Received month and year: %s", monthList.get(0).getText() ));
-        /*if (monthList.get(0).getText().toString().contains(targetMonth + " " + targetYear ))
-            Reporter.log("<b><font color=\"orange\">SOFT PASS: </font></b>First month addition works.");
-        else
-            Reporter.log("<b><font color=\"red\">FAILED: </font></b>Month addition failed!");
-        softAssert.assertTrue(monthList.get(0).getText().contains(targetMonth + " " + targetYear ));*/
-        ReportingUtilities.softAssertTrueWithMessage(softAssert, priority, monthList.get(0).getText().contains(targetMonth + " " + targetYear ), "First month addition works.", "First month addition failed!");
+        logger.info(String.format("First target month/ year to look for: %s, %s",  targetMonth, targetYear));
+        logger.info(String.format("Received month and year: %s", monthList.get(0).getText() ));
+        ReportingUtilities.softAssertTrueWithMessage(softAssert, priority, monthList.get(0).getText().contains(targetMonth + " " + targetYear ), "First month addition works.", "First month addition failed!", testCaseId);
 
 
+        testCaseId = "T1.6-b";
         targetMonth = "Dec";
         targetYear = Integer.toString(Calendar.getInstance().get(Calendar.YEAR));
         mcm.automaticallyAddNewMonth(targetMonth, targetYear);
         monthList = mcm.getExistingMonthAsListOfItems();
-        Reporter.log(String.format("Second target month/ year to look for: %s, %s",  targetMonth, targetYear));
-        Reporter.log(String.format("Received month and year: %s", monthList.get(0).getText() ));
-        ReportingUtilities.softAssertTrueWithMessage(softAssert, priority, monthList.get(0).getText().contains(targetMonth + " " + targetYear ), "Second month addition works.", "Second month addition failed!");
+        logger.info(String.format("Second target month/ year to look for: %s, %s",  targetMonth, targetYear));
+        logger.info(String.format("Received month and year: %s", monthList.get(0).getText() ));
+        ReportingUtilities.softAssertTrueWithMessage(softAssert, priority, monthList.get(0).getText().contains(targetMonth + " " + targetYear ), "Second month addition works.", "Second month addition failed!", testCaseId);
 
+        testCaseId = "T1.6-c";
         targetMonth = "Sep";
         targetYear = Integer.toString(Calendar.getInstance().get(Calendar.YEAR) +1);
         mcm.automaticallyAddNewMonth(targetMonth, targetYear);
         monthList = mcm.getExistingMonthAsListOfItems();
-        Reporter.log(String.format("Third target month/ year to look for: %s, %s",  targetMonth, targetYear));
-        Reporter.log(String.format("Received month and year: %s", monthList.get(0).getText() ));
-        ReportingUtilities.softAssertTrueWithMessage(softAssert, priority, monthList.get(0).getText().contains(targetMonth + " " + targetYear ), "Third month addition works.", "Third month addition failed!");
+        /*Reporter.log(String.format("Third target month/ year to look for: %s, %s",  targetMonth, targetYear));
+        Reporter.log(String.format("Received month and year: %s", monthList.get(0).getText() ));*/
+        ReportingUtilities.softAssertTrueWithMessage(softAssert, priority, monthList.get(0).getText().contains(targetMonth + " " + targetYear ), "Third month addition works.", "Third month addition failed!", testCaseId);
 
         softAssert.assertAll();
 

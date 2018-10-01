@@ -17,7 +17,7 @@ public class T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths extends Bas
     @Test
     public void TryToCreateDuplicateMonths() {
         priority = TestCasePriority.P2;
-        Reporter.log("<b>Now testing: T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths<b>");
+        testCaseId = "T1_7";
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
         //Create a month instance
@@ -36,15 +36,15 @@ public class T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths extends Bas
 
 
 
-        Reporter.log("Is the 'duplicaet month' dialog displayed?" + ccdmd.isDuplicateMonthsWarningDisplayed());
+        logger.info("Is the 'duplicaet month' dialog displayed?" + ccdmd.isDuplicateMonthsWarningDisplayed());
         String desiredTitleText = "SORRY!";
         String actualTitleText = ccdmd.getTitleTextFromCannotCreateDuplicateMonthPopup();
-        Reporter.log("Dialog title reads as follows: " + ccdmd.getTitleTextFromCannotCreateDuplicateMonthPopup());
+        logger.info("Dialog title reads as follows: " + ccdmd.getTitleTextFromCannotCreateDuplicateMonthPopup());
         String desiredMessageText = "The month - year combination that you have selected is already in use. Please check the Months list at the left-hand side of main app screen.";
-        Reporter.log("Dialog message reads as follows: " + ccdmd.getTextFromCannotCreateDuplicateMonthPopup());
+        logger.info("Dialog message reads as follows: " + ccdmd.getTextFromCannotCreateDuplicateMonthPopup());
         String actualMessageText = ccdmd.getTextFromCannotCreateDuplicateMonthPopup();
 
-        ReportingUtilities.assertTrueWithMessage(priority, ccdmd.isDuplicateMonthsWarningDisplayed() && desiredTitleText.equals(actualTitleText) && desiredMessageText.equals(actualMessageText), "User prevented from adding duplicate months.", "User NOT prevented from adding duplicate months!");
+        ReportingUtilities.assertTrueWithMessage(priority, ccdmd.isDuplicateMonthsWarningDisplayed() && desiredTitleText.equals(actualTitleText) && desiredMessageText.equals(actualMessageText), "User prevented from adding duplicate months.", "User NOT prevented from adding duplicate months!", testCaseId);
 
     }
 }

@@ -16,12 +16,12 @@ public class T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect extends BaseTest {
     @Test
     public void verifyAddMonthDialogLayout() {
         priority = TestCasePriority.P3;
-        //Reporter.log("<b>Now testing: T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect<b>");
+       testCaseId = "T1.2";
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
         mcm.pressAddNewMonthButton();
         AddMonthDialog amd = new AddMonthDialog(driver);
 
-        ReportingUtilities.assertTrueWithMessage(priority, amd.isAddMonthDialogInitialLayoutCorrect(), "The layout of 'Add Month Dialog' is correct. All the main controls are present.", "The layout of 'Add Month Dialog' is IN-correct. Certain controls are missing!");
+        ReportingUtilities.assertTrueWithMessage(priority, amd.isAddMonthDialogInitialLayoutCorrect(), "The layout of 'Add Month Dialog' is correct. All the main controls are present.", "The layout of 'Add Month Dialog' is IN-correct. Certain controls are missing!", testCaseId);
     }
 
 

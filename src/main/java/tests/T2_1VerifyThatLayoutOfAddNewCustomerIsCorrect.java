@@ -13,7 +13,7 @@ public class T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect extends BaseTest {
     @Test
     public void testAddNewCustomerLayout () {
         priority = TestCasePriority.P3;
-        Reporter.log("<b>Now testing: T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect<b>");
+        testCaseId = "T2_1";
 
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
         mcm.pressAddNewCustomerButton();
@@ -22,11 +22,11 @@ public class T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect extends BaseTest {
 
 
         //LOGGING SECTION:
-        Reporter.log("Text from the dialog: " + ancd.getTextFromAddCustomerDialog());
-        Reporter.log("Is the add selected customer button displayed? : " + ancd.getAddSelectedCustomer().isDisplayed());
-        Reporter.log("Is the add selected customer button enabled? : " + ancd.getAddSelectedCustomer().isEnabled());
-        Reporter.log("Is the add new customer button displayed? : " + ancd.getAddNewCustomer().isDisplayed());
-        Reporter.log("Is the add new customer button enabled? : " + ancd.getAddNewCustomer().isEnabled());
+        logger.info("Text from the dialog: " + ancd.getTextFromAddCustomerDialog());
+        logger.info("Is the add selected customer button displayed? : " + ancd.getAddSelectedCustomer().isDisplayed());
+        logger.info("Is the add selected customer button enabled? : " + ancd.getAddSelectedCustomer().isEnabled());
+        logger.info("Is the add new customer button displayed? : " + ancd.getAddNewCustomer().isDisplayed());
+        logger.info("Is the add new customer button enabled? : " + ancd.getAddNewCustomer().isEnabled());
 
         ReportingUtilities.assertTrueWithMessage(priority,
                 (ancd.getTextFromAddCustomerDialog().equals("Select existing or add brand new customer: ")
@@ -35,6 +35,6 @@ public class T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect extends BaseTest {
                 && ancd.getAddNewCustomer().isDisplayed()
                 && ancd.getAddNewCustomer().isEnabled() == true),
                 "Layout of 'Add New Customer' dialog is correct.",
-                "Layout of 'Add New Customer' dialog is NOT correct!");
+                "Layout of 'Add New Customer' dialog is NOT correct!", testCaseId);
     }
 }

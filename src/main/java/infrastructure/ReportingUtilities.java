@@ -16,65 +16,52 @@ public class ReportingUtilities {
 
     private static boolean hasTableBeenCerated = false;
 
-    //Results overview counters
-    private static int overallP0 = 0;
-    private static int passedP0 = 0;
-    private static int overallP1 = 0;
-    private static int passedP1 = 0;
-    private static int overallP2 = 0;
-    private static int passedP2 = 0;
-    private static int overallP3 = 0;
-    private static int passedP3 = 0;
-    private static int overallP4 = 0;
-    private static int passedP4 = 0;
-
-
     //Pass Rate map
     private static HashMap<TestCasePriority, PassRatesDto<Integer, Integer>> passRateMap;
 
 
 
-    public static void assertTrueWithMessage(TestCasePriority priority, boolean passOrFail, String messageIfPassed, String messageIfFailed) {
+    public static void assertTrueWithMessage(TestCasePriority priority, boolean passOrFail, String messageIfPassed, String messageIfFailed, String tcId) {
         setUpReporting();
         calculatePassRates(priority, passOrFail);
         if (passOrFail)
-            Reporter.log("<tr><td>" + priority + "</td><td><b><font color=\"green\">PASSED</font></b></td><td>" + messageIfPassed + "</td></tr>");
+            Reporter.log("<tr><td>" + priority + "</td><td><b><font color=\"green\">PASSED</font></b></td><td>tcId: " + messageIfPassed + "</td></tr>");
         else
-            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"red\">FAILED</font></b></td><td>" + messageIfFailed + "</td></tr>");
+            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"red\">FAILED</font></b></td><td>tcId: " + messageIfFailed + "</td></tr>");
 
         Assert.assertTrue(passOrFail);
     }
 
-    public static void assertFalseWithMessage(TestCasePriority priority, boolean passOrFail, String messageIfPassed, String messageIfFailed) {
+    public static void assertFalseWithMessage(TestCasePriority priority, boolean passOrFail, String messageIfPassed, String messageIfFailed, String tcId) {
         setUpReporting();
         calculatePassRates(priority, !passOrFail);
         if (!passOrFail)
-            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"red\">FAILED</font></b></td><td>" + messageIfPassed + "</td></tr>");
+            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"red\">FAILED</font></b></td><td>tcId: " + messageIfPassed + "</td></tr>");
         else
-            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"green\">PASSED</font></b></td><td>" + messageIfFailed + "</td></tr>");
+            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"green\">PASSED</font></b></td><td>tcId: " + messageIfFailed + "</td></tr>");
 
         Assert.assertFalse(passOrFail);
     }
 
 
-    public static void softAssertTrueWithMessage(SoftAssert sAssert, TestCasePriority priority, boolean passOrFail, String messageIfPassed, String messageIfFailed) {
+    public static void softAssertTrueWithMessage(SoftAssert sAssert, TestCasePriority priority, boolean passOrFail, String messageIfPassed, String messageIfFailed, String tcId) {
         setUpReporting();
         calculatePassRates(priority, passOrFail);
         if (passOrFail)
-            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"orange\">PASSED</font></b></td><td>" + messageIfFailed + "</td></tr>");
+            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"green\">PASSED</font></b></td><td>tcId: " + messageIfFailed + "</td></tr>");
         else
-            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"red\">FAILED</font></b></td><td>" + messageIfPassed + "</td></tr>");
+            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"red\">FAILED</font></b></td><td>tcId: " + messageIfPassed + "</td></tr>");
 
         sAssert.assertTrue(passOrFail);
     }
 
-    public static void softAssertFalseWithMessage(SoftAssert sAssert, TestCasePriority priority,  boolean passOrFail, String messageIfPassed, String messageIfFailed) {
+    public static void softAssertFalseWithMessage(SoftAssert sAssert, TestCasePriority priority,  boolean passOrFail, String messageIfPassed, String messageIfFailed, String tcId) {
         setUpReporting();
-        calculatePassRates(priority, !passOrFail);
-        if (!passOrFail)
-            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"orange\">PASSED</font></b></td><td>" + messageIfFailed + "</td></tr>");
+        calculatePassRates(priority, passOrFail);
+        if (passOrFail)
+            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"green\">PASSED</font></b></td><td>tcId: " + messageIfFailed + "</td></tr>");
         else
-            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"red\">FAILED</font></b></td><td>" + messageIfPassed + "</td></tr>");
+            Reporter.log("<tr><td>" + priority + "<td><b><font color=\"red\">FAILED</font></b></td><td>tcId: " + messageIfPassed + "</td></tr>");
 
         sAssert.assertTrue(passOrFail);
     }

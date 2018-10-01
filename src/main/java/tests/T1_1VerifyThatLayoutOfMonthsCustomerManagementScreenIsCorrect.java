@@ -21,9 +21,9 @@ public class T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect exten
     @Test
     public void testLayout () {
         priority = TestCasePriority.P3;
-        //Reporter.log("<b>Now testing: T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect<b>");
+        testCaseId = "T1.1";
         MonthsCustomersManagementScreen managementPage = new MonthsCustomersManagementScreen(super.driver);
 
-        ReportingUtilities.assertTrueWithMessage(priority, managementPage.isBasicLayoutCorrect(), "The layout of Management screen is correct. All the main controls are present.", "The layout of Management screen is IN-correct! Certain controls are missing!");
+        ReportingUtilities.assertTrueWithMessage(priority, managementPage.isBasicLayoutCorrect(), "The layout of Management screen is correct. All the main controls are present.", "The layout of Management screen is IN-correct! Certain controls are missing!", testCaseId);
     }
 }

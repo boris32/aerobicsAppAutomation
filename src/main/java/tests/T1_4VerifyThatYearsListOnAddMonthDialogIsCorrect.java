@@ -18,7 +18,7 @@ public class T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect extends BaseTest{
     @Test
     public void checkYearsList() {
         priority = TestCasePriority.P2;
-        Reporter.log("<b>Now testing: T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect<b>");
+        testCaseId = "T1.4";
 
         DataHandler dh = new DataHandler();
         try {
@@ -39,6 +39,6 @@ public class T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect extends BaseTest{
         for (int i=0;i<3;i++)
             strYearsExpected.add(Integer.toString(year + i));
 
-        ReportingUtilities.assertTrueWithMessage(priority, (strYearsExpected.containsAll(strYearsActual)) && (strYearsExpected.size() == strYearsActual.size()), "Months list on the 'Add Month Dialog' contains the correct elements: " + strYearsActual, ">Months list on the 'Add Month Dialog' in incorrect: " + strYearsActual);
+        ReportingUtilities.assertTrueWithMessage(priority, (strYearsExpected.containsAll(strYearsActual)) && (strYearsExpected.size() == strYearsActual.size()), "Months list on the 'Add Month Dialog' contains the correct elements: " + strYearsActual, ">Months list on the 'Add Month Dialog' in incorrect: " + strYearsActual, testCaseId);
     }
 }

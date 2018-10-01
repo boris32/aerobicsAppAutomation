@@ -12,6 +12,7 @@ import org.testng.annotations.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 /**
  * Created by Boris on 6/21/2018.
@@ -20,6 +21,9 @@ public class BaseTest {
 
     protected AppiumDriver<MobileElement> driver;
     protected TestCasePriority priority;
+    protected String testCaseId;
+    protected static Logger logger = Logger.getLogger("AerobicsAutomation");
+    protected final String TEST_CASE_EXECUTION_LOGGING_FLAG = "####" + testCaseId;
 
     @BeforeTest
     public void setupTest() throws MalformedURLException {

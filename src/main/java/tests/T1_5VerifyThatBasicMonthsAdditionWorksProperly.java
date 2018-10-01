@@ -17,7 +17,7 @@ public class T1_5VerifyThatBasicMonthsAdditionWorksProperly extends BaseTest {
     @Test
     public void AddNewMonth() {
         priority = TestCasePriority.P0;
-        testCaseId = "T1_5";
+        testCaseId = "T1.5";
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
 

@@ -17,7 +17,7 @@ public class T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect extends BaseTest 
 
     @Test
     public void verifyThatMonthsListIsCorrect() {
-        priority = TestCasePriority.P2;
+        priority = TestCasePriority.P1;
         testCaseId = "T1.3";
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
         mcm.pressAddNewMonthButton();

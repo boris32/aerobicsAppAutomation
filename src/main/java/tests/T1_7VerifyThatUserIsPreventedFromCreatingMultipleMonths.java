@@ -17,7 +17,7 @@ public class T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths extends Bas
     @Test
     public void TryToCreateDuplicateMonths() {
         priority = TestCasePriority.P2;
-        testCaseId = "T1_7";
+        testCaseId = "T1.7";
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
         //Create a month instance

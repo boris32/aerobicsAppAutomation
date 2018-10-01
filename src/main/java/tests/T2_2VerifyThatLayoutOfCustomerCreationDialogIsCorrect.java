@@ -14,12 +14,12 @@ public class T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect extends BaseT
     @Test
     public void verifyThatLayoutOfCustomerCreationDialogIsCorrect () {
         priority = TestCasePriority.P3;
-        testCaseId = "T2_2";
+        testCaseId = "T2.2";
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
         mcm.pressAddNewCustomerButton();
         AddNewCustomerDialog ancd = new AddNewCustomerDialog(driver);
         ancd.clickAddNewCustomer();
 
-        ReportingUtilities.assertTrueWithMessage(priority, new CustomerCreationForm(driver).verifyCustomerCreationFormDefaultLayout(), "Default layout of Customer Creation Dialog is correct.", "Default layout of Customer Creation Dialog is IN-correct.", testCaseId);
+        ReportingUtilities.assertTrueWithMessage(priority, new CustomerCreationForm(driver).verifyCustomerCreationFormDefaultLayout(), "Default layout of 'Customer Creation' Dialog is correct.", "Default layout of Customer Creation Dialog is IN-correct.", testCaseId);
     }
 }

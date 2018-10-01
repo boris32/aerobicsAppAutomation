@@ -44,4 +44,6 @@ public class AddNewCustomerDialog extends BasePage {
         return new CustomerCreationForm(driver);
     }
 
+
+
 }

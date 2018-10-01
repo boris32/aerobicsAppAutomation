@@ -13,7 +13,7 @@ public class T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect extends BaseTest {
     @Test
     public void testAddNewCustomerLayout () {
         priority = TestCasePriority.P3;
-        testCaseId = "T2_1";
+        testCaseId = "T2.1";
 
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
         mcm.pressAddNewCustomerButton();

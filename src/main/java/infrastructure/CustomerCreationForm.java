@@ -92,6 +92,18 @@ public class CustomerCreationForm extends BasePage {
         return this;
     }
 
+    public String getFirstNameText() {
+        return firstNameField.getText();
+    }
+
+    public String getLastNameText() {
+        return lastNameField.getText();
+    }
+
+    public String getUsualFeeText() {
+        return usualFeeField.getText();
+    }
+
     //LAYOUT
     public boolean verifyCustomerCreationFormDefaultLayout () {
         boolean result = false;

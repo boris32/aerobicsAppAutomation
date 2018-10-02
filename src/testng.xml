@@ -4,58 +4,58 @@
     -->
 
 <!--
-             <test name="Test initial layout">
+         <test name="Test initial layout">
+             <classes>
+                 <class name="tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect" />
+             </classes>
+         </test>
+
+
+         <test name="Test Add Month Layout">
+             <classes>
+                 <class name="tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect"/>
+             </classes>
+         </test>
+
+             <test name="Test Months List">
                  <classes>
-                     <class name="tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect" />
+                     <class name="tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect"/>
                  </classes>
              </test>
 
 
-             <test name="Test Add Month Layout">
+             <test name="Test Years List">
                  <classes>
-                     <class name="tests.T1_2VerifyThatLayoutOfAddMonthsDialogIsCorrect"/>
+                     <class name="tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect"/>
                  </classes>
              </test>
 
-                 <test name="Test Months List">
-                     <classes>
-                         <class name="tests.T1_3VerifyThatMonthsListOnAddMonthDialogIsCorrect"/>
-                     </classes>
-                 </test>
+             <test name="Test Single Month Addition">
+                 <classes>
+                     <class name="tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly"/>
+                 </classes>
+             </test>
 
 
-                 <test name="Test Years List">
-                     <classes>
-                         <class name="tests.T1_4VerifyThatYearsListOnAddMonthDialogIsCorrect"/>
-                     </classes>
-                 </test>
-
-                 <test name="Test Single Month Addition">
-                     <classes>
-                         <class name="tests.T1_5VerifyThatBasicMonthsAdditionWorksProperly"/>
-                     </classes>
-                 </test>
-
-
-                    <test name="Test Multiple Months Addition">
-                        <classes>
-                            <class name="tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly"/>
-                        </classes>
-                    </test>
-
-
-                <test name="Cannot create duplicate months">
+                <test name="Test Multiple Months Addition">
                     <classes>
-                        <class name="tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths"/>
+                        <class name="tests.T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly"/>
                     </classes>
                 </test>
 
 
-                <test name="Add Customer Dialog Layout">
-                    <classes>
-                        <class name="tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect"/>
-                    </classes>
-                </test>
+            <test name="Cannot create duplicate months">
+                <classes>
+                    <class name="tests.T1_7VerifyThatUserIsPreventedFromCreatingMultipleMonths"/>
+                </classes>
+            </test>
+
+
+            <test name="Add Customer Dialog Layout">
+                <classes>
+                    <class name="tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect"/>
+                </classes>
+            </test>
 
 
         <test name="verify customer creation dialog layout">
@@ -69,11 +69,25 @@
                 <class name="tests.T2_3VerifyFieldTextValidationOnCustomerCreationDialog"/>
             </classes>
         </test>
--->
+
         <test name="Customer creation fields char limits">
             <classes>
                 <class name="tests.T2_4VerifyThatCharacterNumberRestrictionsInCustomerCreationDialogFieldsIsCorrect"/>
             </classes>
         </test>
+
+
+        <test name="Verify basic customer addition">
+            <classes>
+                <class name="tests.T2_5VerifyThatBasicCustomerCreationWorksProperly"/>
+            </classes>
+        </test>
+-->
+        <test name="Verify multiple customer account creation">
+            <classes>
+                <class name="tests.T2_6VerifyThatMultipleCustomerCreationWorksProperly"/>
+            </classes>
+        </test>
+
 
         </suite>

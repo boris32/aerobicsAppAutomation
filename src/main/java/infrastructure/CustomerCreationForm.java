@@ -59,9 +59,9 @@ public class CustomerCreationForm extends BasePage {
         return this;
     }
 
-    public CustomerCreationForm clickCreateButton() {
+    public MonthsCustomersManagementScreen clickCreateButton() {
         createButton.click();
-        return this;
+        return new MonthsCustomersManagementScreen(driver);
     }
 
     public CustomerCreationForm clickCanceleButton() {

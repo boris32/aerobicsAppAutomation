@@ -13,7 +13,7 @@ public class T2_4VerifyThatCharacterNumberRestrictionsInCustomerCreationDialogFi
     @Test
     public void verifyCharacterNumberRestrictions() {
         priority = TestCasePriority.P4;
-        testCaseId = "T2.4";
+        testCaseId = "T2.4a";
 
         SoftAssert sAssert = new SoftAssert();
 
@@ -22,8 +22,10 @@ public class T2_4VerifyThatCharacterNumberRestrictionsInCustomerCreationDialogFi
 
         ReportingUtilities.softAssertTrueWithMessage(sAssert, priority, ccf.getFirstNameText().length() == 20, "First Name field accepts up to 20 characters.", "First Name field accepts MORE than 20 characters (exceeds limit)!", testCaseId);
 
+        testCaseId = "T2.4b";
         ReportingUtilities.softAssertTrueWithMessage(sAssert, priority, ccf.getLastNameText().length() == 20, "Last Name field accepts up to 20 characters.", "Last Name field accepts MORE than 20 characters (exceeds limit)!", testCaseId);
 
+        testCaseId = "T2.4c";
         ReportingUtilities.softAssertTrueWithMessage(sAssert, priority, ccf.getUsualFeeText().length() == 10, "Usual fee field accepts up to 10 characters.", "Usual fee field accepts MORE than 10 characters (exceeds limit)!", testCaseId);
 
         sAssert.assertAll();

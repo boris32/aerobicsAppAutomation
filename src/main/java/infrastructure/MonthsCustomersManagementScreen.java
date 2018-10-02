@@ -19,6 +19,7 @@ public class MonthsCustomersManagementScreen extends BasePage {
         private MobileElement customerDetails;
         private AppiumDriver<MobileElement> driver;
         private List<MobileElement> monthsListItems;
+        private List<MobileElement> customerListItems;
 
 
 
@@ -67,8 +68,6 @@ public class MonthsCustomersManagementScreen extends BasePage {
 
             return monthsListItems;
         }
-
-
 
 
         public void automaticallyAddNewMonth(String desiredMonth, String desiredYear) {
@@ -123,6 +122,12 @@ public class MonthsCustomersManagementScreen extends BasePage {
             addNewCustomer.click();
             return new AddNewCustomerDialog(driver);
         }
+
+    public List<MobileElement> getExistingCustomersAsListOfItems () {
+        customerListItems = driver.findElements(By.xpath("//android.widget.ListView[@resource-id='com.example.boris.myandroidapp:id/CustomerList']/android.widget.TextView"));
+
+        return customerListItems;
+    }
 
 
 

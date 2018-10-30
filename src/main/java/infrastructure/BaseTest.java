@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 public class BaseTest {
 
     protected AppiumDriver<MobileElement> driver;
-    protected TestCasePriority priority;
+    protected TestCasePriority priority = TestCasePriority.TBD;
     protected String testCaseId;
     protected static Logger logger = Logger.getLogger("AerobicsAutomation");
     protected final String TEST_CASE_EXECUTION_LOGGING_FLAG = "####" + testCaseId;

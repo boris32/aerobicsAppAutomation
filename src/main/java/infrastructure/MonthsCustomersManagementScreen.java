@@ -41,10 +41,10 @@ public class MonthsCustomersManagementScreen extends BasePage {
         //Confirming that vital layout elements are present on page load
         public boolean isBasicLayoutCorrect() {
             super.logger.info(String.format("Checking basic layout on the Management screen\n Add New Month button present? %s \n Add New Customer button present? %s \n Month list present? %s \n Customer list " +
-                    "present?" + " %s \n Customer details present? %s \n", addNewMonth.isDisplayed(), addNewCustomer.isDisplayed(), monthsList.isDisplayed(), customerList.isDisplayed(),
-                    customerDetails.isDisplayed()));
+                    "present?" + " %s \n Customer details present? %s \n + is Add Customer button enabled? %s", addNewMonth.isDisplayed(), addNewCustomer.isDisplayed(), monthsList.isDisplayed(), customerList.isDisplayed(),
+                    customerDetails.isDisplayed(), addNewCustomer.isEnabled()));
 
-            if (addNewMonth.isDisplayed() && addNewCustomer.isDisplayed() && monthsList.isDisplayed() && customerList.isDisplayed() && customerDetails.isDisplayed()) {
+            if (addNewMonth.isDisplayed() && addNewCustomer.isDisplayed() && !addNewCustomer.isEnabled() && monthsList.isDisplayed() && customerList.isDisplayed() && customerDetails.isDisplayed()) {
 
 
                 return true;

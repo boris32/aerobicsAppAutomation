@@ -87,9 +87,6 @@ public class ReportingUtilities {
 
     private static void calculatePassRates(TestCasePriority priority, boolean passOrFail) {
 
-
-
-
         switch (priority) {
             case P0: {
                 passRateMap.get(TestCasePriority.P0).setOverall(passRateMap.get(TestCasePriority.P0).getOverall()+1);

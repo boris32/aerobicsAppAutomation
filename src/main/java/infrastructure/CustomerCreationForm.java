@@ -1,7 +1,10 @@
 package infrastructure;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 
 /**
@@ -127,5 +130,7 @@ public class CustomerCreationForm extends BasePage {
     public boolean isCreateButtonEnabled () {
         return createButton.isEnabled();
     }
+
+
 
 }

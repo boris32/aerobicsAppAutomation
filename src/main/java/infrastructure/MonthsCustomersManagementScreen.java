@@ -98,6 +98,35 @@ public class MonthsCustomersManagementScreen extends BasePage {
             //return this;
         }
 
+    //No parameters needed, method will use current month of current year
+    public MonthsCustomersManagementScreen automaticallyAddNewMonth() {
+
+        pressAddNewMonthButton();
+        AddMonthDialog amd = new AddMonthDialog(driver);
+
+        amd.expandMonthSpinner();
+        List<MobileElement> months = amd.getMonthsListInSpinnerAsListOfMobileElements();
+        for (MobileElement el : months) {
+            if (el.getText().equals(myAppUtil.getMonthAbbrev(Calendar.getInstance().get(Calendar.MONTH)))) {
+                el.click();
+                break;
+            }
+        }
+
+        amd.expandYearSpinner();
+        List<MobileElement> years = amd.getYearsListInSpinnerAsListOfMobileElements();
+        for (MobileElement el : years) {
+            if (el.getText().equals(Integer.toString(Calendar.getInstance().get(Calendar.YEAR)))) {
+                el.click();
+                break;
+            }
+        }
+
+        amd.clickOkButton();
+
+        return this;
+    }
+
         //Starts from main screen, creates a new month then returns user to the main screen again
         public MonthsCustomersManagementScreen createNewMonthFromScratch (String desiredMonth, String desiredYear) {
             pressAddNewMonthButton()
@@ -123,10 +152,20 @@ public class MonthsCustomersManagementScreen extends BasePage {
             return new AddNewCustomerDialog(driver);
         }
 
+    //Get a list of customer accounts currently assigned to the selecetd month
     public List<MobileElement> getExistingCustomersAsListOfItems () {
         customerListItems = driver.findElements(By.xpath("//android.widget.ListView[@resource-id='com.example.boris.myandroidapp:id/CustomerList']/android.widget.TextView"));
 
         return customerListItems;
+    }
+
+    public MonthsCustomersManagementScreen clickSpecificItemInMonthsList (int index) {
+        getExistingMonthAsListOfItems().get(index).click();
+        return this;
+    }
+
+    public void clickSpecificItemInCustomersList (int index) {
+        //getCu.get(index).click();
     }
 
 

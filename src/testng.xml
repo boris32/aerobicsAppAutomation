@@ -3,7 +3,7 @@
     <!--
     -->
 
-<!--
+
          <test name="Test initial layout">
              <classes>
                  <class name="tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect" />
@@ -56,7 +56,7 @@
                     <class name="tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect"/>
                 </classes>
             </test>
-
+    
 
         <test name="verify customer creation dialog layout">
             <classes>
@@ -82,12 +82,24 @@
                 <class name="tests.T2_5VerifyThatBasicCustomerCreationWorksProperly"/>
             </classes>
         </test>
--->
+
         <test name="Verify multiple customer account creation">
             <classes>
                 <class name="tests.T2_6VerifyThatMultipleCustomerCreationWorksProperly"/>
             </classes>
         </test>
 
+
+    <test name="Verify contents of add existing customers list">
+        <classes>
+            <class name="tests.T2_8VerifyThatContentsOfAddExistingCustomerListIsCorrectlyUpdatedUponCustomerAddition"/>
+        </classes>
+    </test>
+
+    <test name="Verify customer association with a specific month - upon account creation">
+        <classes>
+            <class name="tests.T2_9VerifyThatUserIsAbleToAddExistingCustomerToAMonth"/>
+        </classes>
+    </test>
 
         </suite>

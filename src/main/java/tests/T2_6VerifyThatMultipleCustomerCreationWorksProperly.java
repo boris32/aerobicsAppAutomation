@@ -26,7 +26,7 @@ public class T2_6VerifyThatMultipleCustomerCreationWorksProperly extends BaseTes
         String testFName1 = "FirstName001";
         String testLName1 = "LastName001";
         String testFee1 = "1000";
-        mcm.pressAddNewCustomerButton().clickAddNewCustomer().enterCustomerFirstName(testFName1).enterCustomerLastName(testLName1).enterCustomerUsualFee(testFee1).clickCreateButton();
+        mcm.automaticallyAddNewMonth().pressAddNewCustomerButton().clickAddNewCustomer().enterCustomerFirstName(testFName1).enterCustomerLastName(testLName1).enterCustomerUsualFee(testFee1).clickCreateButton();
 
 
 

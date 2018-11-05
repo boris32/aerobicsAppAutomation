@@ -20,8 +20,9 @@ public class T2_3VerifyFieldTextValidationOnCustomerCreationDialog extends BaseT
 
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
 
-        CustomerCreationForm ccf = mcm.pressAddNewCustomerButton()
-            .clickAddNewCustomer();
+        CustomerCreationForm ccf = mcm.automaticallyAddNewMonth()
+                .pressAddNewCustomerButton()
+                .clickAddNewCustomer();
 
 
         //Enter first name only

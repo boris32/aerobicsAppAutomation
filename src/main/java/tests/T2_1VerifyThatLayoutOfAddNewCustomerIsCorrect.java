@@ -16,7 +16,8 @@ public class T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect extends BaseTest {
         testCaseId = "T2.1";
 
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
-        mcm.pressAddNewCustomerButton();
+        mcm.automaticallyAddNewMonth()
+                .pressAddNewCustomerButton();
 
         AddNewCustomerDialog ancd = new AddNewCustomerDialog(driver);
 

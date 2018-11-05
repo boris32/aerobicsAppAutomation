@@ -16,7 +16,8 @@ public class T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect extends BaseT
         priority = TestCasePriority.P3;
         testCaseId = "T2.2";
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
-        mcm.pressAddNewCustomerButton();
+        mcm.automaticallyAddNewMonth()
+                .pressAddNewCustomerButton();
         AddNewCustomerDialog ancd = new AddNewCustomerDialog(driver);
         ancd.clickAddNewCustomer();
 

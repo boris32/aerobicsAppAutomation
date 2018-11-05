@@ -56,50 +56,51 @@
                     <class name="tests.T2_1VerifyThatLayoutOfAddNewCustomerIsCorrect"/>
                 </classes>
             </test>
-    
-
-        <test name="verify customer creation dialog layout">
-            <classes>
-                <class name="tests.T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect"/>
-            </classes>
-        </test>
-
-        <test name="verify customer creation dialog validation">
-            <classes>
-                <class name="tests.T2_3VerifyFieldTextValidationOnCustomerCreationDialog"/>
-            </classes>
-        </test>
-
-        <test name="Customer creation fields char limits">
-            <classes>
-                <class name="tests.T2_4VerifyThatCharacterNumberRestrictionsInCustomerCreationDialogFieldsIsCorrect"/>
-            </classes>
-        </test>
 
 
-        <test name="Verify basic customer addition">
-            <classes>
-                <class name="tests.T2_5VerifyThatBasicCustomerCreationWorksProperly"/>
-            </classes>
-        </test>
+           <test name="verify customer creation dialog layout">
+               <classes>
+                   <class name="tests.T2_2VerifyThatLayoutOfCustomerCreationDialogIsCorrect"/>
+               </classes>
+           </test>
 
-        <test name="Verify multiple customer account creation">
-            <classes>
-                <class name="tests.T2_6VerifyThatMultipleCustomerCreationWorksProperly"/>
-            </classes>
-        </test>
+           <test name="verify customer creation dialog validation">
+               <classes>
+                   <class name="tests.T2_3VerifyFieldTextValidationOnCustomerCreationDialog"/>
+               </classes>
+           </test>
+
+           <test name="Customer creation fields char limits">
+               <classes>
+                   <class name="tests.T2_4VerifyThatCharacterNumberRestrictionsInCustomerCreationDialogFieldsIsCorrect"/>
+               </classes>
+           </test>
 
 
-    <test name="Verify contents of add existing customers list">
-        <classes>
-            <class name="tests.T2_8VerifyThatContentsOfAddExistingCustomerListIsCorrectlyUpdatedUponCustomerAddition"/>
-        </classes>
-    </test>
+           <test name="Verify basic customer addition">
+               <classes>
+                   <class name="tests.T2_5VerifyThatBasicCustomerCreationWorksProperly"/>
+               </classes>
+           </test>
 
-    <test name="Verify customer association with a specific month - upon account creation">
-        <classes>
-            <class name="tests.T2_9VerifyThatUserIsAbleToAddExistingCustomerToAMonth"/>
-        </classes>
-    </test>
+           <test name="Verify multiple customer account creation">
+               <classes>
+                   <class name="tests.T2_6VerifyThatMultipleCustomerCreationWorksProperly"/>
+               </classes>
+           </test>
+
+
+       <test name="Verify contents of add existing customers list">
+           <classes>
+               <class name="tests.T2_8VerifyThatContentsOfAddExistingCustomerListIsCorrectlyUpdatedUponCustomerAddition"/>
+           </classes>
+       </test>
+
+       <test name="Verify customer association with a specific month - upon account creation">
+           <classes>
+               <class name="tests.T2_9VerifyThatUserIsAbleToAddExistingCustomerToAMonth"/>
+           </classes>
+       </test>
+
 
         </suite>

@@ -18,7 +18,12 @@ public class T2_4VerifyThatCharacterNumberRestrictionsInCustomerCreationDialogFi
         SoftAssert sAssert = new SoftAssert();
 
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
-        CustomerCreationForm ccf = mcm.pressAddNewCustomerButton().clickAddNewCustomer().enterCustomerFirstName("01234567890123456789012345678901234567890123456789").enterCustomerLastName("01234567890123456789012345678901234567890123456789").enterCustomerUsualFee("01234567890123456789012345678901234567890123456789");
+        CustomerCreationForm ccf = mcm.automaticallyAddNewMonth()
+                .pressAddNewCustomerButton()
+                .clickAddNewCustomer()
+                .enterCustomerFirstName("01234567890123456789012345678901234567890123456789")
+                .enterCustomerLastName("01234567890123456789012345678901234567890123456789")
+                .enterCustomerUsualFee("01234567890123456789012345678901234567890123456789");
 
         ReportingUtilities.softAssertTrueWithMessage(sAssert, priority, ccf.getFirstNameText().length() == 20, "First Name field accepts up to 20 characters.", "First Name field accepts MORE than 20 characters (exceeds limit)!", testCaseId);
 

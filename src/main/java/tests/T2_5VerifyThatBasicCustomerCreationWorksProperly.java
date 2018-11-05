@@ -20,7 +20,14 @@ public class T2_5VerifyThatBasicCustomerCreationWorksProperly extends BaseTest {
         String testLName = "LastNameTester";
         String testFee = "1000";
         MonthsCustomersManagementScreen mcm = new MonthsCustomersManagementScreen(driver);
-        List<MobileElement> customersList = mcm.pressAddNewCustomerButton().clickAddNewCustomer().enterCustomerFirstName(testFName).enterCustomerLastName(testLName).enterCustomerUsualFee(testFee).clickCreateButton().getExistingCustomersAsListOfItems();
+        List<MobileElement> customersList = mcm.automaticallyAddNewMonth()
+                .pressAddNewCustomerButton()
+                .clickAddNewCustomer()
+                .enterCustomerFirstName(testFName)
+                .enterCustomerLastName(testLName)
+                .enterCustomerUsualFee(testFee)
+                .clickCreateButton()
+                .getExistingCustomersAsListOfItems();
 
         ReportingUtilities.assertTrueWithMessage(priority, (customersList.get(0).getText().toString().contains(testFName + " " + testLName)), "Basic customer addition works.", "Basic customer addition doesn't work!", testCaseId);
 

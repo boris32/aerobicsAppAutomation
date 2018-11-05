@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by Boris on 10/30/2018.
  */
-public class T2_9VerifyThatUserIsAbleToAddExistingCustomerToAMonth extends BaseTest {
+public class T2_9VerifyThatUserIsAbleToAddNewCustomerToAMonth extends BaseTest {
 
     @Test
     public void verifyT2_9() {

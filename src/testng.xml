@@ -98,7 +98,7 @@
 
        <test name="Verify customer association with a specific month - upon account creation">
            <classes>
-               <class name="tests.T2_9VerifyThatUserIsAbleToAddExistingCustomerToAMonth"/>
+               <class name="tests.T2_9VerifyThatUserIsAbleToAddNewCustomerToAMonth"/>
            </classes>
        </test>
 

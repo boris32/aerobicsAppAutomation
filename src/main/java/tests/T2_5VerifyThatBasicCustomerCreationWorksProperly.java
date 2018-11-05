@@ -31,8 +31,5 @@ public class T2_5VerifyThatBasicCustomerCreationWorksProperly extends BaseTest {
 
         ReportingUtilities.assertTrueWithMessage(priority, (customersList.get(0).getText().toString().contains(testFName + " " + testLName)), "Basic customer addition works.", "Basic customer addition doesn't work!", testCaseId);
 
-
-
-
     }
 }

@@ -3,7 +3,7 @@
     <!--
     -->
 
-
+        <!--
          <test name="Test initial layout">
              <classes>
                  <class name="tests.T1_1VerifyThatLayoutOfMonthsCustomerManagementScreenIsCorrect" />
@@ -96,11 +96,18 @@
            </classes>
        </test>
 
-       <test name="Verify customer association with a specific month - upon account creation">
+       <test name="Verify customer association with a specific month - upon account creation (T2.9)">
            <classes>
                <class name="tests.T2_9VerifyThatUserIsAbleToAddNewCustomerToAMonth"/>
            </classes>
        </test>
+
+    -->
+    <test name="Verify customer association with a specific month - upon account creation (T2.10)">
+        <classes>
+            <class name="tests.T2_10VerifyThatUserIsAbleToAddExistingCustomerToAMonth"/>
+        </classes>
+    </test>
 
 
         </suite>

@@ -168,6 +168,22 @@ public class MonthsCustomersManagementScreen extends BasePage {
         //getCu.get(index).click();
     }
 
+    //Starts from MonthsCustomersManagementScreen, adds a desired customer to the month
+    public MonthsCustomersManagementScreen addExistingCustomerToMonthFromList(int listIndex) {
+        pressAddNewCustomerButton()
+                .getExistingCustomersSpinner()
+                .click();
+
+        AddNewCustomerDialog ancd = new AddNewCustomerDialog(driver);
+        List<MobileElement> customersList = ancd.expandExistingCustomersSpinner()
+                .getExistingCustomersListAsListOfElements();
+
+        customersList.get(listIndex).click();
+        ancd.clickAddSelectedCustomerButton();
+
+        return this;
+    }
+
 
 
 

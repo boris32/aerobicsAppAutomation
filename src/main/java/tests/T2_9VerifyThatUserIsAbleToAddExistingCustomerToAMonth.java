@@ -37,6 +37,11 @@ public class T2_9VerifyThatUserIsAbleToAddExistingCustomerToAMonth extends BaseT
         elementsList = mcm.clickSpecificItemInMonthsList(1).getExistingCustomersAsListOfItems();
         ReportingUtilities.softAssertTrueWithMessage(sAssert, priority, elementsList.get(0).getText().contains("Tester001_Fname Tester001_Lname") && elementsList.get(1).getText().contains("Tester002_Fname Tester002_Lname"), "Newly created customer accounts are  added to the currently ACTIVE month", "Newly created customer accounts are MISSING for the currently ACTIVE month", testCaseId);
 
-        sAssert.assertAll();
+        try {
+            sAssert.assertAll();
+        }
+        catch (AssertionError e) {
+            ReportingUtilities.assertTrueWithMessage(priority, false, "", "Test Case T2.9 experienced a general failure!", testCaseId);
+        }
     }
 }

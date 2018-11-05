@@ -52,7 +52,12 @@ public class T1_6VerifyThatConsecutiveMonthsAdditionWorksProperly extends BaseTe
         Reporter.log(String.format("Received month and year: %s", monthList.get(0).getText() ));*/
         ReportingUtilities.softAssertTrueWithMessage(softAssert, priority, monthList.get(0).getText().contains(targetMonth + " " + targetYear ), "Third month addition works.", "Third month addition failed!", testCaseId);
 
-        softAssert.assertAll();
+        try {
+            softAssert.assertAll();
+        }
+        catch (AssertionError e) {
+            ReportingUtilities.assertTrueWithMessage(priority, false, "", "Test Case T1.6 experienced a general failure!", testCaseId);
+        }
 
 
 

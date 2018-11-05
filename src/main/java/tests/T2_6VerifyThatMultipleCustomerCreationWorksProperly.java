@@ -48,6 +48,11 @@ public class T2_6VerifyThatMultipleCustomerCreationWorksProperly extends BaseTes
         testCaseId = "T2.6c";
         ReportingUtilities.softAssertTrueWithMessage(sAssert, priority, (customersList.get(2).getText().toString().contains(testFName3 + " " + testLName3)), "Third customer account created properly.", "Third customer account creation failed.", testCaseId);
 
-        sAssert.assertAll();
+        try {
+            sAssert.assertAll();
+        }
+        catch (AssertionError e) {
+            ReportingUtilities.assertTrueWithMessage(priority, false, "", "Test Case T2.6 experienced a general failure!", testCaseId);
+        }
     }
 }

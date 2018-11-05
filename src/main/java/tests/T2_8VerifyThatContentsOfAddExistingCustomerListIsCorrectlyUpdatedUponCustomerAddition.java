@@ -53,6 +53,11 @@ public class T2_8VerifyThatContentsOfAddExistingCustomerListIsCorrectlyUpdatedUp
         ReportingUtilities.softAssertTrueWithMessage(sAssert, priority, elementsList.get(0).getText().toString().contains("Test1") && elementsList.get(0).getText().toString().contains("Test2"), "Newly created customer is now included into the add existing customers list", "Latest created customer is NOT included into the add existing customers list", testCaseId);
 
 
-        sAssert.assertAll();
+        try {
+            sAssert.assertAll();
+        }
+        catch (AssertionError e) {
+            ReportingUtilities.assertTrueWithMessage(priority, false, "", "Test Case T2.8 experienced a general failure!", testCaseId);
+        }
     }
 }

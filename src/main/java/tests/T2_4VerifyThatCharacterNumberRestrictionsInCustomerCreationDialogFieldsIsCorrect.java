@@ -33,6 +33,11 @@ public class T2_4VerifyThatCharacterNumberRestrictionsInCustomerCreationDialogFi
         testCaseId = "T2.4c";
         ReportingUtilities.softAssertTrueWithMessage(sAssert, priority, ccf.getUsualFeeText().length() == 10, "Usual fee field accepts up to 10 characters.", "Usual fee field accepts MORE than 10 characters (exceeds limit)!", testCaseId);
 
-        sAssert.assertAll();
+        try {
+            sAssert.assertAll();
+        }
+        catch (AssertionError e) {
+            ReportingUtilities.assertTrueWithMessage(priority, false, "", "Test Case T2.4 experienced a general failure!", testCaseId);
+        }
     }
 }

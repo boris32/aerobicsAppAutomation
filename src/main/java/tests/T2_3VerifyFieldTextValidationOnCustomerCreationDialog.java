@@ -52,6 +52,11 @@ public class T2_3VerifyFieldTextValidationOnCustomerCreationDialog extends BaseT
 
 
 
-        sAssert.assertAll();
+        try {
+            sAssert.assertAll();
+        }
+        catch (AssertionError e) {
+            ReportingUtilities.assertTrueWithMessage(priority, false, "", "Test Case T2.3 experienced a general failure!", testCaseId);
+        }
     }
 }
